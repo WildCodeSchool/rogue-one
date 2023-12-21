@@ -1,0 +1,46 @@
+:root {
+  --primary-color: #CBA135;
+  --secondary-color: #7FEFBD;
+  --white-color: #f5f5f5;
+  --black-color: #000000;
+  --background: #eeeeee --main-font: 'Suranna', 'serif';
+}
+
+/* Color of the links BEFORE scroll */
+.navbar-scroll .nav-link,
+.navbar-scroll .fa-bars,
+.navbar-scroll .navar-brand {
+  color: var(--white-color);
+  font-family: var(--main-font);
+  font-size: 20px;
+
+}
+
+.navbar-scroll .nav-link:hover {
+  color: var(--secondary-color);
+}
+
+/* Color of the links AFTER scroll */
+.navbar-scrolled .nav-link,
+.navbar-scrolled .fa-bars,
+.navbar-scrolled .navar-brand {
+  color: #4f4f4f;
+}
+
+/* Color of the navbar AFTER scroll */
+.navbar-scroll,
+.navbar-scrolled {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* An optional height of the navbar AFTER scroll */
+.navbar.navbar-scroll.navbar-scrolled {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+body {
+  background-color: var(--background);
+}
