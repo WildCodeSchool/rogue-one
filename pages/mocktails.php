@@ -31,6 +31,9 @@
 
   <?php include_once("../include/navbar.php") ?>
 
+  <!-- Tableau des cocktails -->
+  <?php $cocktails = ["Tequila Sunrise","Mojito","Blue lagoon","Margarita","Piña Colada","Gin Tonic"] ?>
+
   <div class="page-heading header-text">
     <div class="container">
       <div class="row">
@@ -49,13 +52,13 @@
           <a class="is_active" href="#!" data-filter="*">Tous</a>
         </li>
         <li>
-          <a href="#!" data-filter=".adv">Apartment</a>
+          <a href="#!" data-filter=".adv">Type A</a>
         </li>
         <li>
-          <a href="#!" data-filter=".str">Villa House</a>
+          <a href="#!" data-filter=".str">Type B</a>
         </li>
         <li>
-          <a href="#!" data-filter=".rac">Penthouse</a>
+          <a href="#!" data-filter=".rac">Type C</a>
         </li>
       </ul>
       <div class="row properties-box">
@@ -69,12 +72,9 @@
             <ul>
               <li>Bedrooms: <span>8</span></li>
               <li>Bathrooms: <span>8</span></li>
-              <li>Area: <span>545m2</span></li>
-              <li>Floor: <span>3</span></li>
-              <li>Parking: <span>6 spots</span></li>
             </ul>
             <div class="main-button">
-              <a href="mocktails-details.php">Schedule a visit</a>
+              <a href="mocktails-details.php">Commander</a>
             </div>
           </div>
         </div>
@@ -118,7 +118,7 @@
         </div>
       </div>
 
-      <div class="row">
+      <!--<div class="row">
         <div class="col-lg-12">
           <ul class="pagination">
             <li><a href="#">1</a></li>
@@ -127,7 +127,7 @@
             <li><a href="#">>></a></li>
           </ul>
         </div>
-      </div>
+      </div>-->
 
     </div>
   </div>

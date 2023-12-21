@@ -35,7 +35,7 @@
                         <li><a href="../pages/mocktails.php">Nos Mocktails</a></li>
                         <li><a href="../pages/contact.php">Nous contacter</a></li>
                         <li><a href="../pages/about.php">A propos</a></li>
-                        <li><a href="#"><i class="fa fa-calendar"></i> Schedule a visit</a></li>
+                        <li><a href="#"><i class="fa fa-calendar"></i>Commander</a></li>
                     </ul>
                     <a class='menu-trigger'>
                         <span>Menu</span>
