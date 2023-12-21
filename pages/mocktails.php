@@ -8,9 +8,9 @@
 
   <title>Nos Mocktails</title>
 
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/fontawesome.css">
-  <link rel="stylesheet" href="../assets/css/templatemo-villa-agency.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
   <link rel="stylesheet" href="../assets/css/owl.css">
   <link rel="stylesheet" href="../assets/css/animate.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
@@ -136,10 +136,10 @@
 
   <script src="../vendor/jquery/jquery.min.js"></script>
   <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
-  <script src="../../assets/js/isotope.min.js"></script>
-  <script src="../../assets/js/owl-carousel.js"></script>
-  <script src="../../assets/js/counter.js"></script>
-  <script src="../../assets/js/custom.js"></script>
+  <script src="../assets/js/isotope.min.js"></script>
+  <script src="../assets/js/owl-carousel.js"></script>
+  <script src="../assets/js/counter.js"></script>
+  <script src="../assets/js/custom.js"></script>
 </body>
 
 </html>

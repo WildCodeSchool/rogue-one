@@ -1,7 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900");
 
 :root {
-  --main-color: #CBA135
+  --main-color: #CBA135;
+  --secondary-color: #7FEFBD;
+  --white-color: #f6f6f6;
+  --black-color: #000000;
 }
 
 * {
@@ -394,7 +397,7 @@ Header Style
 
 .header-area .main-nav .logo h1 {
   line-height: 100px;
-  font-size: 28px;
+  font-size: 20px;
   text-transform: uppercase;
   color: #1e1e1e;
   font-weight: 700;
@@ -1344,8 +1347,10 @@ footer.footer-no-gap {
 
 footer {
   margin-top: 150px;
-  background-color: #1e1e1e;
-  min-height: 100px;
+  /* background-color: #1e1e1e; */
+  background-color: var(--main-color);
+  padding: 10px;
+  width: 100%;
 }
 
 footer p {
