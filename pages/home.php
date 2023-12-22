@@ -4,8 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
   <title>Home</title>
 
@@ -30,15 +29,17 @@
     </div>
   </div>
 
+  <?php include_once("include/navbar.php") ?>
+
   <div class="main-banner">
     <div class="owl-carousel owl-banner">
       <div class="item item-1">
         <div class="header-text">
-          <span class="category">Toronto, <em>Canada</em></span>
-          <h2>Hurry!<br>Get the Best Villa for you</h2>
+          <!--<span class="category">Toronto, <em>Canada</em></span>
+          <h2>Hurry!<br>Get the Best Villa for you</h2> -->
         </div>
       </div>
-      <div class="item item-2">
+      <!-- <div class="item item-2">
         <div class="header-text">
           <span class="category">Melbourne, <em>Australia</em></span>
           <h2>Be Quick!<br>Get the best villa in town</h2>
@@ -49,9 +50,11 @@
           <span class="category">Miami, <em>South Florida</em></span>
           <h2>Act Now!<br>Get the highest level penthouse</h2>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
+
+  <?php include_once("include/footer.php") ?>
 
   <script src="../vendor/jquery/jquery.min.js"></script>
   <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>

@@ -29,7 +29,7 @@
                         <h1>Mocktail</h1>
                     </a>
 
-            
+
                     <ul class="nav">
                         <li><a href="../index.php" class="active">Accueil</a></li>
                         <li><a href="../pages/mocktails.php">Nos Mocktails</a></li>

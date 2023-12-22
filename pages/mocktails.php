@@ -31,14 +31,11 @@
 
   <?php include_once("../include/navbar.php") ?>
 
-  <!-- Tableau des cocktails -->
-  <?php $cocktails = ["Tequila Sunrise","Mojito","Blue lagoon","Margarita","Piña Colada","Gin Tonic"] ?>
-
   <div class="page-heading header-text">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <span class="breadcrumb"><a href="#">Home</a> / Nos Mocktails</span>
+          <span class="breadcrumb"><a href="#">Accueil</a> / Nos Mocktails</span>
           <h3>Nos Mocktails</h3>
         </div>
       </div>
@@ -52,94 +49,60 @@
           <a class="is_active" href="#!" data-filter="*">Tous</a>
         </li>
         <li>
-          <a href="#!" data-filter=".adv">Type A</a>
-        </li>
-        <li>
-          <a href="#!" data-filter=".str">Type B</a>
-        </li>
-        <li>
-          <a href="#!" data-filter=".rac">Type C</a>
+          <a href="#!" data-filter=".adv">Produit A</a>
         </li>
       </ul>
-      <div class="row properties-box">
 
-        <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 adv">
+      <div class="row properties-box">
+        <!-- Tableau des cocktails -->
+        <?php $cocktails = [
+          "Tequila Sunrise",
+           "Mojito", 
+           "Blue lagoon", 
+           "Margarita", 
+           "Piña Colada", 
+           "Gin Tonic"];
+
+
+        foreach ($cocktails as $cocktail => $name) {
+          echo  '<div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 adv">
           <div class="item">
-            <a href="mocktails-details.php"><img src="../assets/images/property-01.jpg" alt=""></a>
-            <span class="category">Luxury Villa</span>
-            <h6>$2.264.000</h6>
-            <h4><a href="mocktails-details.php">18 Old Street Miami, OR 97219</a></h4>
+            <a href="mocktails-details.php"><img src="../assets/images/blue_cocktail.jpg" alt=""></a>
+            <span class="category">Exotique</span>
+            <h6>0.00€</h6>
+            <h4><a href="mocktails-details.php">' . $name . '</a></h4>
             <ul>
               <li>Bedrooms: <span>8</span></li>
-              <li>Bathrooms: <span>8</span></li>
             </ul>
             <div class="main-button">
-              <a href="mocktails-details.php">Commander</a>
+              <a href="mocktails-details.php">Voir le produit</a>
             </div>
           </div>
-        </div>
+        </div>';
+        } ?>
 
-        <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 str">
-          <div class="item">
-            <a href="mocktails-details.php"><img src="../assets/images/property-02.jpg" alt=""></a>
-            <span class="category">Luxury Villa</span>
-            <h6>$1.180.000</h6>
-            <h4><a href="mocktails-details.php">54 New Street Florida, OR 27001</a></h4>
-            <ul>
-              <li>Bedrooms: <span>6</span></li>
-              <li>Bathrooms: <span>5</span></li>
-              <li>Area: <span>450m2</span></li>
-              <li>Floor: <span>3</span></li>
-              <li>Parking: <span>8 spots</span></li>
+        <!-- <div class="row">
+          <div class="col-lg-12">
+            <ul class="pagination">
+              <li><a href="#">1</a></li>
+              <li><a class="is_active" href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">>></a></li>
             </ul>
-            <div class="main-button">
-              <a href="mocktails-details.php">Schedule a visit</a>
-            </div>
           </div>
-        </div>
+        </div>  -->
 
-        <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 adv rac">
-          <div class="item">
-            <a href="mocktails-details.php"><img src="../assets/images/property-03.jpg" alt=""></a>
-            <span class="category">Luxury Villa</span>
-            <h6>$1.460.000</h6>
-            <h4><a href="mocktails-details.php">26 Mid Street Portland, OR 38540</a></h4>
-            <ul>
-              <li>Bedrooms: <span>5</span></li>
-              <li>Bathrooms: <span>4</span></li>
-              <li>Area: <span>225m2</span></li>
-              <li>Floor: <span>3</span></li>
-              <li>Parking: <span>10 spots</span></li>
-            </ul>
-            <div class="main-button">
-              <a href="mocktails-details.php">Schedule a visit</a>
-            </div>
-          </div>
-        </div>
       </div>
-
-      <!--<div class="row">
-        <div class="col-lg-12">
-          <ul class="pagination">
-            <li><a href="#">1</a></li>
-            <li><a class="is_active" href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">>></a></li>
-          </ul>
-        </div>
-      </div>-->
-
     </div>
-  </div>
 
-  <?php include_once("../include/footer.php") ?>
+    <?php include_once("../include/footer.php") ?>
 
-  <script src="../vendor/jquery/jquery.min.js"></script>
-  <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
-  <script src="../assets/js/isotope.min.js"></script>
-  <script src="../assets/js/owl-carousel.js"></script>
-  <script src="../assets/js/counter.js"></script>
-  <script src="../assets/js/custom.js"></script>
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../assets/js/isotope.min.js"></script>
+    <script src="../assets/js/owl-carousel.js"></script>
+    <script src="../assets/js/counter.js"></script>
+    <script src="../assets/js/custom.js"></script>
 </body>
 
 </html>
