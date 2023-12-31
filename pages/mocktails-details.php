@@ -37,7 +37,7 @@
       <div class="row">
         <div class="col-lg-12">
           <span class="breadcrumb"><a href="#">Accueil</a> / Nom du produit</span>
-          <h3>Nom du produit</h3>
+          <?php echo '<h3>id[name]</h3>' ?>
         </div>
       </div>
     </div>
@@ -52,7 +52,7 @@
           </div>
           <div class="main-content">
             <span class="category">Exotique</span>
-            <h4>Nom du produit</h4>
+            <h4>id[name]</h4>
             <!-- <p>Get <strong>the best villa agency</strong> HTML CSS Bootstrap Template for your company website. TemplateMo provides you the <a href="https://www.google.com/search?q=best+free+css+templates" target="_blank">best free CSS templates</a> in the world. Please tell your friends about it. Thank you. Cloud bread kogi bitters pitchfork shoreditch tumblr yr succulents single-origin coffee schlitz enamel pin you probably haven't heard of them ugh hella.
 
               <br><br>When you look for free CSS templates, you can simply type TemplateMo in any search engine website. In addition, you can type TemplateMo Digital Marketing, TemplateMo Corporate Layouts, etc. Master cleanse +1 intelligentsia swag post-ironic, slow-carb chambray knausgaard PBR&B DSA poutine neutra cardigan hoodie pop-up.
@@ -119,18 +119,18 @@
             </ul>
           </div>
         </div> -->
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
 
-  <?php include_once("../include/footer.php") ?>
+      <?php include_once("../include/footer.php") ?>
 
-  <script src="../vendor/jquery/jquery.min.js"></script>
-  <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
-  <script src="../../assets/js/isotope.min.js"></script>
-  <script src="../../assets/js/owl-carousel.js"></script>
-  <script src="../../assets/js/counter.js"></script>
-  <script src="../../assets/js/custom.js"></script>
+      <script src="../vendor/jquery/jquery.min.js"></script>
+      <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+      <script src="../../assets/js/isotope.min.js"></script>
+      <script src="../../assets/js/owl-carousel.js"></script>
+      <script src="../../assets/js/counter.js"></script>
+      <script src="../../assets/js/custom.js"></script>
 </body>
 
 </html>

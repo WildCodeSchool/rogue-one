@@ -35,7 +35,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <span class="breadcrumb"><a href="#">Accueil</a> / Nos Mocktails</span>
+          <span class="breadcrumb">Nos Mocktails</span>
           <h3>Nos Mocktails</h3>
         </div>
       </div>
@@ -56,26 +56,29 @@
       <div class="row properties-box">
         <!-- Tableau des cocktails -->
         <?php $cocktails = [
-          "Tequila Sunrise",
-           "Mojito", 
-           "Blue lagoon", 
-           "Margarita", 
-           "Piña Colada", 
-           "Gin Tonic"];
+          ['name' => "Tequila Sunrise", 'img' => "", 'prix' => 15],
+          ['name' => "Mojito", 'prix' => 9],
+          ['name' => "Blue lagoon", 'prix' => 15],
+          ['name' => "Margarita", 'prix' => 15],
+          ['name' => "Piña Colada", 'prix' => 25],
+          ['name' => "Gin Tonic", 'prix' => 9],
+          ['name' => "Tequila Sunrise", 'prix' => 16],
+          ['name' => "Tequila Sunrise", 'prix' => 24]
+        ];
 
 
-        foreach ($cocktails as $cocktail => $name) {
+        foreach ($cocktails as $cocktail) {
           echo  '<div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 adv">
           <div class="item">
             <a href="mocktails-details.php"><img src="../assets/images/blue_cocktail.jpg" alt=""></a>
             <span class="category">Exotique</span>
-            <h6>0.00€</h6>
-            <h4><a href="mocktails-details.php">' . $name . '</a></h4>
+            <h6>' . $cocktail['prix'] . '.00€</h6>
+            <h4><a href="mocktails-details.php">' . $cocktail['name'] . '</a></h4>
             <ul>
               <li>Bedrooms: <span>8</span></li>
             </ul>
             <div class="main-button">
-              <a href="mocktails-details.php">Voir le produit</a>
+              <a href="mocktails-details.php?$id">Voir le produit</a>
             </div>
           </div>
         </div>';
