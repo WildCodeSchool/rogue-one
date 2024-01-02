@@ -1,5 +1,3 @@
-<link rel="stylesheet" href="../assets/css/footer.css">
-
 <footer>
     <div id="footer-content">
         <div id="copyright">

@@ -1,6 +1,5 @@
-
 <?php
 
-include 'include/footer.php';
+include_once("../rogue-one/pages/home.php");
 
 ?>
