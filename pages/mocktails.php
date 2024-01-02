@@ -101,6 +101,8 @@
     <script src="../assets/js/owl-carousel.js"></script>
     <script src="../assets/js/counter.js"></script>
     <script src="../assets/js/custom.js"></script>
+    <script src="../assets/js/navbar.js"></script>
+
 </body>
 
 </html>
