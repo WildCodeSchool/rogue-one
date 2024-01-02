@@ -15,24 +15,14 @@
 </head>
 
 <body>
-  <div id="js-preloader" class="js-preloader">
-    <div class="preloader-inner">
-      <span class="dot"></span>
-      <div class="dots">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </div>
-  </div>
 
+  <?php include_once("../include/preloader_js.php") ?>
   <?php include_once("../include/navbar.php") ?>
 
   <div class="page-heading header-text">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <span class="breadcrumb"><a href="#">Accueil</a> / Nous contacter</span>
           <h3>Nous contacter</h3>
         </div>
       </div>

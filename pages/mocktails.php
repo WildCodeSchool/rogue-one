@@ -31,6 +31,15 @@
     </div>
   </div>
 
+
+  <link rel="stylesheet" href="../assets/css/footer.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+  <?php include_once("../include/preloader_js.php") ?>
+
   <?php include_once("../include/navbar.php") ?>
 
   <div class="page-heading header-text">
@@ -38,6 +47,8 @@
       <div class="row">
         <div class="col-lg-12">
           <span class="breadcrumb"><a href="#">Accueil</a> / Nos Mocktails</span>
+
+          <span class="breadcrumb">Nos Mocktails</span>
           <h3>Nos Mocktails</h3>
         </div>
       </div>
@@ -102,32 +113,8 @@
     <p>Description: <span id="mocktailDescription"></span></p>
     <button id="btnClose">Fermer</button>
   </div>
-  
-<!-- 
-  <div class="page-heading header-text">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <span class="breadcrumb"><a href="#">Accueil</a> / Nom du produit</span>
-          <h3>Nom du produit</h3>
-        </div>
       </div>
     </div>
-  </div>
-
-  <div class="single-property section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8">
-          <div class="main-image">
-            <img src="../../assets/images/blue_cocktail.jpg" alt="">
-          </div>
-          <div class="main-content">
-            <span class="category">Exotique</span>
-            <h4>Nom du produit</h4>
-      </div>
-    </div>
-  </div>  -->
 
     <?php include_once("../include/footer.php") ?>
 
@@ -137,40 +124,6 @@
     <script src="../assets/js/owl-carousel.js"></script>
     <script src="../assets/js/counter.js"></script>
     <script src="../assets/js/custom.js"></script>
-
-    <script>
-  // Attacher un gestionnaire d'événements au clic sur le bouton "Voir le produit"
-  const productLinks = document.querySelectorAll('.main-button a');
-
-  productLinks.forEach(link => {
-    link.addEventListener('click', function(event) {
-      event.preventDefault(); // Empêcher le comportement par défaut du lien
-
-      const mocktailName = this.innerText; // Obtenir le nom du mocktail
-      const mocktailDescription = this.parentElement.parentElement.querySelector('.category').innerText; // Obtenez la description (dans cet exemple, nous utilisons la catégorie pour la description)
-
-      displayMocktailDetails(mocktailName, mocktailDescription);
-    });
-  });
-
-  // Afficher les détails du mocktail
-  function displayMocktailDetails(name, description) {
-    document.getElementById('mocktailName').innerText = name;
-    document.getElementById('mocktailDescription').innerText = description;
-
-    // Afficher les détails
-    document.querySelector('.properties').style.display = 'none';
-    document.querySelector('.mocktail-details').style.display = 'block';
-  }
-
-  // Fermer les détails du mocktail
-  document.getElementById('btnClose').addEventListener('click', function() {
-    document.querySelector('.mocktail-details').style.display = 'none';
-    document.querySelector('.properties').style.display = 'block';
-  });
-</script>
-
-
 </body>
 
 </html>
