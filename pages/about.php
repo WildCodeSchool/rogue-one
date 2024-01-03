@@ -5,13 +5,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <title>about</title>
+  <title>Mocktail Céleste - A propos de nous</title>
   <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/fontawesome.css">
   <link rel="stylesheet" href="../assets/css/style.css">
   <link rel="stylesheet" href="../assets/css/owl.css">
   <link rel="stylesheet" href="../assets/css/animate.css">
   <link rel="stylesheet" href="../assets/css/about.css">
+  <link rel="stylesheet" href="../assets/css/profil_cards.css">
   <link rel="stylesheet" href="../assets/css/footer.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 </head>
@@ -23,7 +24,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <span class="breadcrumb"><À href="#">À propos de nous</span>
+          <span class="breadcrumb"><a href="#">À propos de nous</span>
           <h3>À propos de nous</h3>
         </div>
       </div>
@@ -85,7 +86,7 @@
     </div>
   </div>
 
-  <div id="notre-equipe">
+  <!-- <div id="notre-equipe">
     <div class="membres-equipe">
       <div class="membre">
         <div class="membre-images">
@@ -108,7 +109,9 @@
         <p>Présentation du membre 3...</p>
       </div>
     </div>
-  </div>
+  </div> -->
+
+  <?php include_once("../include/profil_cards.php") ?>
 
   <?php include_once("../include/footer.php") ?>
 
