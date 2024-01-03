@@ -76,43 +76,7 @@
   <div class="banniere-separation">
   </div>
 
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="section-heading">
-          <h2>Notre Équipe de Développeurs</h2>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- <div id="notre-equipe">
-    <div class="membres-equipe">
-      <div class="membre">
-        <div class="membre-images">
-          <img src="../assets/images/membre1.png" alt="Membre 1">
-        </div>
-        <div class="membre-intro">
-          <p>"Bonjour, je suis Janah Chouaib, un passionné de développement web âgé de 25 ans. Mon enthousiasme pour l'informatique et la programmation me pousse constamment à explorer de nouveaux horizons. Je trouve un équilibre entre ma passion pour le code et mes autres centres d'intérêt tels que les voyages, le sport et les jeux vidéo. Voyager me permet de découvrir des cultures diverses, tandis que le sport me procure l'énergie nécessaire pour relever les défis du développement web. Les jeux vidéo sont une source de détente et de plaisir dans mon quotidien. Je suis avide d'apprentissage et je considère chaque obstacle comme une opportunité d'acquérir de nouvelles compétences. Ma persévérance, mon courage et ma patience sont les moteurs qui me permettent d'atteindre mes objectifs dans le monde du développement web."</p>
-        </div>
-      </div>
-      <div class="membre">
-        <div class="membre-images">
-          <img src="../assets/images/membre2.png" alt="Membre 1">
-        </div>
-        <p>Présentation du membre 2...</p>
-      </div>
-      <div class="membre">
-        <div class="membre-images">
-          <img src="../assets/images/membre3.png" alt="Membre 1">
-        </div>
-        <p>Présentation du membre 3...</p>
-      </div>
-    </div>
-  </div> -->
-
   <?php include_once("../include/profil_cards.php") ?>
-
   <?php include_once("../include/footer.php") ?>
 
   <script src="../vendor/jquery/jquery.min.js"></script>

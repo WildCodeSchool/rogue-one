@@ -1,56 +1,53 @@
-<!-- this is the markup. you can change the details (your own name, your own avatar etc.) but don’t change the basic structure! -->
-
-<aside class="profile-card">
-
-    <header>
-
-        <!-- here’s the avatar -->
-        <a href="http://ali.shahab.pk">
-            <img src="http://gravatar.com/avatar/eb2d48c7f2cf027bb4cb20483e27c9c9?size=200px">
-        </a>
-
-        <!-- the username -->
-        <h1>Ali Shahab</h1>
-
-        <!-- and role or location -->
-        <h2>Another Web Designer</h2>
-
-    </header>
-
-    <!-- bit of a bio; who are you? -->
-    <div class="profile-bio">
-
-        <p>Specialties are Creative UI, HTML5, CSS3, Semantic Web, Responsive Layouts, Web Standards Compliance, Performance Optimization, Cross Device Troubleshooting.</p>
-
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6 offset-sm-3 mt-4 mb-4">
+            <h2 class="text-center">Notre équipe Dev</h2>
+            <p class="text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+        </div>
     </div>
+    <div class="row">
+        <?php
+        $members = [
+            [
+                "firstname" => "Chouiab",
+                "role" => "Développeur Web",
+                "img" => "../assets/images/team/membre1.png",
+                "desc" => "Bonjour, je suis Janah Chouaib, un passionné de développement web âgé de 25 ans. Mon enthousiasme pour l'informatique et la programmation me pousse constamment à explorer de nouveaux horizons. Je trouve un équilibre entre ma passion pour le code et mes autres centres d'intérêt tels que les voyages, le sport et les jeux vidéo. Voyager me permet de découvrir des cultures diverses, tandis que le sport me procure l'énergie nécessaire pour relever les défis du développement web. Les jeux vidéo sont une source de détente et de plaisir dans mon quotidien. Je suis avide d'apprentissage et je considère chaque obstacle comme une opportunité d'acquérir de nouvelles compétences. Ma persévérance, mon courage et ma patience sont les moteurs qui me permettent d'atteindre mes objectifs dans le monde du développement web.",
+                "link" => ""
+            ],
+            [
+                "firstname" => "Joël",
+                "role" => "Développeur Web",                
+                "img" => "../assets/images/team/membre3.png",                "desc" => "",
+                "link" => "https://www.linkedin.com/in/mayemba/"
+            ],
+            [
+                "firstname" => "Kévin",
+                "role" => "Développeur Web",
+                "img" => "../assets/images/team/membre2.png",
+                "https://cdni.pornpics.com/1280/7/97/92208866/92208866_040_691b.jpg",
+                "desc" => "",
+                "link" => ""
+            ]
+        ];
 
-    <!-- some social links to show off -->
-    <ul class="profile-social-links">
+        foreach ($members as $member) {
 
-        <!-- twitter - el clásico  -->
-        <li>
-            <a href="https://twitter.com/alishahab">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/social-twitter.svg">
-            </a>
-        </li>
-
-        <!-- envato – use this one to link to your marketplace profile -->
-        <li>
-            <a href="http://themeforest.net/user/alishahab">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/social-envato.svg">
-            </a>
-        </li>
-
-        <!-- codepen - your codepen profile-->
-        <li>
-            <a href="https://codepen.io/alishahab">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/social-codepen.svg">
-            </a>
-        </li>
-
-        <!-- add or remove social profiles as you see fit -->
-
-    </ul>
-
-</aside>
-<!-- that’s all folks! -->
+            echo '<div class="col-md-4">
+            <div class="card-box text-center">
+                <div class="user-pic">
+                    <img src="' . $member["img"] . '" class="img-fluid" alt="User Pic">
+                </div>
+                <h4>' . $member["firstname"] . '</h4>
+                <h6>' . $member["role"] . '</h6>
+                <hr>
+                <p>' . $member["desc"] . '</p>
+                <hr>
+                <a href="' . $member["link"] . '"class="btn" target="_blank">Know More</a>
+            </div>
+        </div>';
+        }
+        ?>
+    </div>
+</div>
+</div>
