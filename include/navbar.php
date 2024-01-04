@@ -7,6 +7,7 @@
                     <li><i class="fa fa-map"></i>lieu</li>
                 </ul>
             </div>
+
             <div class="col-lg-4 col-md-4">
                 <ul class="social-links">
                     <li><a href="#"><i class="fab fa-facebook"></i></a></li>
@@ -15,6 +16,7 @@
                     <li><a href="#"><i class="fab fa-instagram"></i></a></li>
                 </ul>
             </div>
+
         </div>
     </div>
 </div>
@@ -29,14 +31,14 @@
                         <h1>Mocktail</h1>
                     </a>
 
-
                     <ul class="nav">
                         <li><a href="../index.php" class="active">Accueil</a></li>
                         <li><a href="../pages/mocktails.php">Nos Mocktails</a></li>
                         <li><a href="../pages/contact.php">Nous contacter</a></li>
-                        <li><a href="../pages/about.php">A propos de nous</a></li>
+                        <li><a href="../pages/about.php">A propos</a></li>
                         <li><a href="#"><i class="fa fa-calendar"></i>Commander</a></li>
                     </ul>
+
                     <a class='menu-trigger'>
                         <span>Menu</span>
                     </a>
@@ -53,3 +55,4 @@
 <script src="../assets/js/owl-carousel.js"></script>
 <script src="../assets/js/counter.js"></script>
 <script src="../assets/js/custom.js"></script>
+<script src="../assets/js/navabr.js"></script>

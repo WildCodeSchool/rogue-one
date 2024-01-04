@@ -1,11 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900");
 
 :root {
-  --main-color: #cba135;
-  --secondary-color: #7fefbd;
+  --main-color: #CBA135;
+  --secondary-color: #7FEFBD;
   --white-color: #f6f6f6;
   --black-color: #000000;
-  --background: #feffd3;
 }
 
 * {
@@ -59,8 +58,7 @@ hgroup {
 
 html,
 body {
-  font-family: "Poppins", sans-serif;
-  background-color: var(--background);
+  font-family: 'Poppins', sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -105,7 +103,7 @@ Global Styles
 
 html,
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 ::selection {
@@ -156,7 +154,7 @@ body {
   line-height: 50px;
   padding: 0px 30px 0px 0px;
   border-radius: 25px;
-  transition: all 0.3s;
+  transition: all .3s;
 }
 
 .icon-button a i {
@@ -189,7 +187,7 @@ body {
   line-height: 40px;
   padding: 0px 30px;
   border-radius: 25px;
-  transition: all 0.3s;
+  transition: all .3s;
 }
 
 .main-button a:hover {
@@ -297,6 +295,8 @@ Pre-loader Style
   border-radius: 50%;
 }
 
+
+
 /* 
 ---------------------------------------------
 Header Style
@@ -331,7 +331,7 @@ Header Style
   line-height: 30px;
   color: #fff;
   font-size: 14px;
-  transition: all 0.3s;
+  transition: all .3s;
 }
 
 .sub-header ul.social-links li a:hover {
@@ -366,10 +366,10 @@ Header Style
   left: 0;
   right: 0;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15) !important;
-  -webkit-transition: all 0.5s ease 0s;
-  -moz-transition: all 0.5s ease 0s;
-  -o-transition: all 0.5s ease 0s;
-  transition: all 0.5s ease 0s;
+  -webkit-transition: all .5s ease 0s;
+  -moz-transition: all .5s ease 0s;
+  -o-transition: all .5s ease 0s;
+  transition: all .5s ease 0s;
 }
 
 .header-area {
@@ -377,10 +377,10 @@ Header Style
   background-color: #fff;
   height: 100px;
   z-index: 100;
-  -webkit-transition: all 0.5s ease 0s;
-  -moz-transition: all 0.5s ease 0s;
-  -o-transition: all 0.5s ease 0s;
-  transition: all 0.5s ease 0s;
+  -webkit-transition: all .5s ease 0s;
+  -moz-transition: all .5s ease 0s;
+  -o-transition: all .5s ease 0s;
+  transition: all .5s ease 0s;
 }
 
 .header-area .main-nav {
@@ -447,7 +447,7 @@ Header Style
   -o-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
   border: transparent;
-  letter-spacing: 0.25px;
+  letter-spacing: .25px;
 }
 
 .header-area .main-nav .nav li:last-child a {
@@ -487,6 +487,7 @@ Header Style
 .header-area .main-nav .nav li a.active {
   color: var(--main-color);
 }
+
 
 .background-header .main-nav .nav li a.active {
   color: var(--main-color);
@@ -608,6 +609,7 @@ Header Style
     padding-left: 5px;
     padding-right: 5px;
   }
+
 }
 
 @media (max-width: 767px) {
@@ -733,6 +735,7 @@ Header Style
     padding-left: 0px !important;
     padding-right: 0px !important;
   }
+
 }
 
 /* 
@@ -799,7 +802,7 @@ Banner Style
   background-color: #fff;
   border-radius: 50%;
   margin-right: 10px;
-  transition: all 0.5s;
+  transition: all .5s;
 }
 
 .main-banner .owl-dots .active {
@@ -824,7 +827,7 @@ Banner Style
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 50%;
   opacity: 1;
-  transition: all 0.3s;
+  transition: all .3s;
 }
 
 .main-banner .owl-nav .owl-prev i {
@@ -842,6 +845,8 @@ Banner Style
   opacity: 1;
   background-color: rgba(255, 255, 255, 0.5);
 }
+
+
 
 /* 
 ---------------------------------------------
@@ -1050,10 +1055,11 @@ Fun Facts Style
   height: 50px;
   background-color: var(--main-color);
   border-radius: 50%;
-  content: "";
+  content: '';
   right: -25px;
   top: -25px;
 }
+
 
 /* 
 ---------------------------------------------
@@ -1083,7 +1089,7 @@ Best Deal Style
 }
 
 .best-deal .tabs-content .nav-tabs .nav-link.active {
-  background-color: var(#cba135) !important;
+  background-color: var(#CBA135) !important;
   color: #fff;
 }
 
@@ -1146,6 +1152,7 @@ Best Deal Style
 .best-deal .icon-button {
   margin-top: 30px;
 }
+
 
 /* 
 ---------------------------------------------
@@ -1214,6 +1221,7 @@ Properties Style
 .properties .item .main-button {
   text-align: center;
 }
+
 
 /* 
 ---------------------------------------------
@@ -1324,50 +1332,47 @@ Contact Style
   border: none;
   font-size: 15px;
   font-weight: 500;
-  transition: all 0.5s;
+  transition: all .5s;
 }
 
 .contact-content #contact-form button:hover {
   background-color: var(--main-color);
 }
 
+
 /* Footer */
+
+footer.footer-no-gap {
+  margin-top: 0px;
+}
 
 footer {
   margin-top: 150px;
-  background-color: orange;
-  /* background-color: var(--main-color); */
+  /* background-color: #1e1e1e; */
+  background-color: var(--main-color);
   padding: 10px;
   width: 100%;
 }
 
-#footer-content {
+footer p {
   text-align: center;
   line-height: 100px;
   color: #fff;
   font-size: 16px;
   font-weight: 400;
-  position: relative;
 }
 
-#copyright,
-#mentions-legales {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-#copyright p,
-#mentions-legales a {
+footer p a {
   color: #fff;
-  transition: all 0.3s;
+  transition: all .3s;
   position: relative;
   z-index: 3;
 }
 
-#copyright p:hover,
-#mentions-legales a:hover {
+footer p a:hover {
   opacity: 0.75;
 }
+
 
 /* 
 ---------------------------------------------
@@ -1376,7 +1381,7 @@ Page Header Style
 */
 
 .page-heading {
-  background-image: url(../images/page-heading-bg.png);
+  background-image: url(../images/page-heading-bg.jpg);
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1406,6 +1411,7 @@ Page Header Style
   color: #fff;
 }
 
+
 /* 
 ---------------------------------------------
 Properties Style
@@ -1433,7 +1439,7 @@ Properties Style
   background-color: #1e1e1e;
   padding: 12px 25px;
   border-radius: 5px;
-  transition: all 0.3s;
+  transition: all .3s;
 }
 
 .properties ul.properties-filter li a.is_active {
@@ -1472,7 +1478,7 @@ Properties Style
   font-size: 15px;
   font-weight: 600;
   border-radius: 50%;
-  transition: all 0.3s;
+  transition: all .3s;
 }
 
 .properties ul.pagination li a:hover,
@@ -1480,6 +1486,7 @@ Properties Style
   background-color: var(--main-color);
   color: #fff;
 }
+
 
 /* 
 ---------------------------------------------
@@ -1586,6 +1593,7 @@ Single Page Style
   font-weight: 400;
 }
 
+
 /* 
 ---------------------------------------------
 Contact Page Style
@@ -1682,91 +1690,13 @@ Contact Page Style
   border: none;
   font-size: 15px;
   font-weight: 500;
-  transition: all 0.5s;
+  transition: all .5s;
 }
 
 .contact-page #contact-form button:hover {
   background-color: var(--main-color);
 }
 
-/* 
----------------------------------------------
-Page A propos
---------------------------------------------- 
-*/
-
-#notre-histoire {
-  max-height: 100%;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.histoire-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row-reverse;
-  gap: 30px;
-  margin-bottom: 30px;
-}
-
-.histoire-images,
-.histoire-texte {
-  width: 35%;
-}
-
-.histoire-images img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 50%;
-}
-
-.histoire-texte p {
-  font-size: 1.5rem;
-}
-
-.histoire-content::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.banniere-separation {
-  background-color: var(--white-color);
-  height: 8vh;
-}
-
-#notre-equipe {
-  max-height: 100%;
-}
-
-.membres-equipe {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-.membre {
-  width: calc(33.33% - 300px);
-  text-align: center;
-  flex: 0.25;
-  background-color: var(--main-color);
-  border-radius: 15%;
-  padding: 1vh;
-  /* border: 1px solid #000; */
-}
-
-.membre img {
-  max-width: 70%;
-  height: auto;
-  border-radius: 50%;
-}
-
-.membre-intro p {
-  font-size: 0.9rem;
-  font-weight: 500;
-  line-height: 1.8;
-}
 
 /* 
 ---------------------------------------------
