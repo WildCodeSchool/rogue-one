@@ -179,10 +179,10 @@ body {
   color: #fff;
 }
 
-.main-button {
+.main-button a {
   display: inline-block;
-  color: #fff;
   background-color: #1e1e1e;
+  color: #fff;
   font-size: 14px;
   font-weight: 500;
   height: 40px;
@@ -192,9 +192,9 @@ body {
   transition: all 0.3s;
 }
 
-.main-button:hover {
+.main-button a:hover {
   background-color: var(--main-color);
-  color: #000000;
+  color: #fff;
 }
 
 /* 
@@ -1149,22 +1149,22 @@ Best Deal Style
 
 /* 
 ---------------------------------------------
-mocktails Style
+Properties Style
 --------------------------------------------- 
 */
 
-.mocktails .item {
+.properties .item {
   background-color: #fafafa;
   border-radius: 10px;
   padding: 30px;
   margin-bottom: 30px;
 }
 
-.mocktails .item img {
+.properties .item img {
   border-radius: 10px;
 }
 
-.mocktails .item span.category {
+.properties .item span.category {
   background-color: #fbd9cf;
   font-weight: 500;
   border-radius: 5px;
@@ -1175,34 +1175,34 @@ mocktails Style
   margin-top: 25px;
 }
 
-.mocktails .item h4 {
+.properties .item h4 {
   font-size: 19px;
   margin: 25px 0px;
 }
 
-.mocktails .item h4 a {
+.properties .item h4 a {
   color: #1e1e1e;
 }
 
-.mocktails .item ul li {
+.properties .item ul li {
   display: inline-block;
   font-size: 15px;
   color: #4a4a4a;
   margin-right: 20px;
 }
 
-.mocktails .item ul li span {
+.properties .item ul li span {
   font-weight: 600;
   color: #1e1e1e;
 }
 
-.mocktails .item ul {
+.properties .item ul {
   border-bottom: 1px solid #eaeaea;
   margin-bottom: 30px;
   padding-bottom: 30px;
 }
 
-.mocktails .item h6 {
+.properties .item h6 {
   font-size: 20px;
   color: var(--main-color);
   margin-top: 6px;
@@ -1211,7 +1211,7 @@ mocktails Style
   margin-top: 30px;
 }
 
-.mocktails .item .main-button {
+.properties .item .main-button {
   text-align: center;
 }
 
@@ -1408,22 +1408,22 @@ Page Header Style
 
 /* 
 ---------------------------------------------
-mocktails Style
+Properties Style
 --------------------------------------------- 
 */
 
-.mocktails ul.mocktails-filter {
+.properties ul.properties-filter {
   list-style: none;
   text-align: center;
   margin-bottom: 70px;
 }
 
-.mocktails ul.mocktails-filter li {
+.properties ul.properties-filter li {
   display: inline-block;
   margin: 5px 8px;
 }
 
-.mocktails ul.mocktails-filter li a {
+.properties ul.properties-filter li a {
   display: inline-block;
   text-align: center;
   font-size: 15px;
@@ -1436,32 +1436,32 @@ mocktails Style
   transition: all 0.3s;
 }
 
-.mocktails ul.mocktails-filter li a.is_active {
+.properties ul.properties-filter li a.is_active {
   background-color: var(--main-color);
   color: #fff;
 }
 
-.mocktails ul.mocktails-filter li a.is_active:hover {
+.properties ul.properties-filter li a.is_active:hover {
   color: #fff;
 }
 
-.mocktails ul.mocktails-filter li a:hover {
+.properties ul.properties-filter li a:hover {
   color: var(--main-color);
 }
 
-.mocktails ul.pagination {
+.properties ul.pagination {
   margin-top: 50px;
   text-align: center;
   width: 100%;
   display: inline-block;
 }
 
-.mocktails ul.pagination li {
+.properties ul.pagination li {
   display: inline-block;
   margin: 0px 5px;
 }
 
-.mocktails ul.pagination li a {
+.properties ul.pagination li a {
   display: inline-block;
   width: 40px;
   height: 40px;
@@ -1475,8 +1475,8 @@ mocktails Style
   transition: all 0.3s;
 }
 
-.mocktails ul.pagination li a:hover,
-.mocktails ul.pagination li a.is_active {
+.properties ul.pagination li a:hover,
+.properties ul.pagination li a.is_active {
   background-color: var(--main-color);
   color: #fff;
 }
@@ -1794,12 +1794,12 @@ body {
     margin: 0px 5px;
   }
 
-  .mocktails ul.mocktails-filter li a {
+  .properties ul.properties-filter li a {
     font-size: 14px;
     padding: 10px 15px;
   }
 
-  .mocktails ul.mocktails-filter li {
+  .properties ul.properties-filter li {
     margin: 5px;
   }
 
@@ -1874,16 +1874,16 @@ body {
     margin-top: 45px;
   }
 
-  .mocktails .item h6 {
+  .properties .item h6 {
     text-align: center;
     margin-bottom: 15px;
   }
 
-  .mocktails .item .main-button {
+  .properties .item .main-button {
     text-align: center;
   }
 
-  .mocktails .item ul li {
+  .properties .item ul li {
     margin-right: 10px;
     font-size: 13px;
   }
