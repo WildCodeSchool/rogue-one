@@ -38,35 +38,3 @@
   background-color: var(--white-color);
   height: 8vh;
 }
-
-#notre-equipe {
-  max-height: 100%;
-}
-
-.membres-equipe {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-.membre {
-  width: calc(33.33% - 300px);
-  text-align: center;
-  flex: 0.25;
-  background-color: var(--main-color);
-  border-radius: 15%;
-  padding: 1vh;
-  /* border: 1px solid #000; */
-}
-
-.membre img {
-  max-width: 70%;
-  height: auto;
-  border-radius: 50%;
-}
-
-.membre-intro p {
-  font-size: 0.9rem;
-  font-weight: 500;
-  line-height: 1.8;
-}
