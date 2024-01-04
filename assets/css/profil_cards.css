@@ -1,0 +1,81 @@
+@import "style.css";
+
+.user-pic {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 100%;
+    margin: 20px auto 20px;
+    border-left: 3px solid var(--main-color);
+    border-right: 3px solid var(--main-color);
+    border-top: 3px solid var(--main-color);
+    border-bottom: 3px solid var(--main-color);
+    transform: rotate(-30deg);
+    transition: 0.5s;
+}
+
+.card-box:hover .user-pic {
+    transform: rotate(0deg);
+    transform: scale(1.1);
+}
+
+.card-box {
+    padding: 15px;
+    background-color: #fdfdfd;
+    margin: 20px 0px;
+    border-radius: 10px;
+    border: 1px solid #eee;
+    box-shadow: 0px 0px 8px 0px #d4d4d4;
+    transition: 0.5s;
+
+    & img {
+        filter: grayscale(1);
+        transition: all 0.5s ease-out;
+    }
+}
+
+.card-box:hover {
+    border: 1px solid var(--main-color);
+    background-color: var(--main-color);
+
+    & p,
+    .btn,
+    h4,
+    h6 {
+        color: var(--white-color);
+    }
+
+    & img {
+        filter: grayscale(0);
+        transition: all 0.5s ease-out;
+
+    }
+
+    .btn {
+        border: 1px solid var(--white-color);
+    }
+
+    .user-pic {
+        border-left: 3px solid var(--white-color);
+        border-right: 3px solid var(--white-color);
+        border-top: 3px solid var(--white-color);
+        border-bottom: 3px solid var(--white-color);
+    }
+
+    hr {
+        color: var(--white-color);
+    }
+
+}
+
+.card-box p {
+    color: #808080;
+}
+
+hr {
+    color: var(--main-color);
+}
+
+.btn {
+    background-color: var(--main-color);
+}

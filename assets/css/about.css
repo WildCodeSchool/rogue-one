@@ -1,0 +1,40 @@
+#notre-history {
+  max-height: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.history-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.history-images,
+.history-texte {
+  width: 35%;
+}
+
+.history-images img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.history-texte p {
+  font-size: 1.5rem;
+}
+
+.history-content::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.banniere-separation {
+  background-color: var(--white-color);
+  height: 8vh;
+}

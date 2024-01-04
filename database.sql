@@ -1,0 +1,11 @@
+CREATE DATABASE IF NOT EXISTS mocktails_celeste;
+
+CREATE TABLE IF NOT EXISTS `mocktails_celeste`.`WIZARD` (
+    `ID` INT NOT NULL AUTO_INCREMENT,
+    `NAME` VARCHAR(100) NOT NULL,
+    `DESCRIPTION` TEXT NULL,
+    PRIMARY KEY (`ID`)
+);
+
+INSERT INTO `wizard` (`ID`, `FIRSTNAME`, `LASTNAME`, `IS_MUGGLE`, `BIRTHDAY`, `BIRTH_PLACE`, `BIOGRAPHY`) VALUES
+(1, 'Harry', 'Potter', 0, '1980-07-31', 'London', 'Biographie de Harry...'),;
