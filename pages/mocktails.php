@@ -29,14 +29,14 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <span class="breadcrumb"><a href="#">Nos Mocktails</span>
+          <span class="breadcrumb"><a href="#">Accueil</a> / Nos Mocktails</span>
           <h3>Nos Mocktails</h3>
         </div>
       </div>
     </div>
   </div>
-
-  <div class="section properties">
+  
+  <div class="section mocktails">
     <div class="container">
       <ul class="mocktails-filter" id="categories">
     <li>
@@ -62,8 +62,7 @@
     </li>
       </ul>
 
-      <div class="row properties-box">
-
+      <div class="row mocktails-box">
 
       <?php
   $mocktails = [
@@ -217,6 +216,7 @@
           </div>';
         }
         ?>
+        
         <div class="product-details" hidden">
           <div class="main-content">
             <h2 id="product-name"></h2>
@@ -230,7 +230,6 @@
           </div>
         </div>
       </div>
-    </div>
 
       <div id="mocktails-data" hidden">
         <?php echo json_encode($mocktails); ?>
