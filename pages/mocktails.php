@@ -39,7 +39,11 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
+
+          <span class="breadcrumb"><a href="#">Nos Mocktails</span>
+
           <span class="breadcrumb"><a href="#">Accueil</a> / Nos Mocktails</span>
+
           <h3>Nos Mocktails</h3>
         </div>
       </div>

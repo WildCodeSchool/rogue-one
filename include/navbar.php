@@ -3,8 +3,8 @@
         <div class="row">
             <div class="col-lg-8 col-md-8">
                 <ul class="info">
-                    <li><i class="fa fa-envelope"></i>em@il.fr</li>
-                    <li><i class="fa fa-map"></i>lieu</li>
+                    <li><i class="fa fa-envelope"></i>mocktails-celestes.fr</li>
+                    <li><i class="fa fa-map"></i><a href="../assets/pdf/catalogue_mocktails_tchwizin-kreyol.pdf" target="_blank">Télécharger le catalogue</a></li>
                 </ul>
             </div>
             <div class="col-lg-4 col-md-4">
@@ -34,7 +34,7 @@
                         <li><a href="../index.php" class="active">Accueil</a></li>
                         <li><a href="../pages/mocktails.php">Nos Mocktails</a></li>
                         <li><a href="../pages/contact.php">Nous contacter</a></li>
-                        <li><a href="../pages/about.php">A propos de nous</a></li>
+                        <li><a href="../pages/about.php">A propos</a></li>
                         <li><a href="#"><i class="fa fa-calendar"></i>Commander</a></li>
                     </ul>
                     <a class='menu-trigger'>

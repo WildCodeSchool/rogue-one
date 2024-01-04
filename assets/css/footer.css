@@ -17,9 +17,14 @@
    color: var(--seondary-color);
  }
 
+ footer h5 {
+   color: var(--white-color);
+ }
+
  footer h6 {
    margin-bottom: 40px;
    position: relative;
+   color: var(--white-color);
  }
 
  footer h6:after {
