@@ -31,13 +31,13 @@
         <div class="header-text">
 
           <span class="category">Haut <em>de gamme</em></span>
-          <h2>Éveillez vos sens avec nos mocktails tendance :<br> </h2>
+          <h1>Éveillez vos sens avec nos mocktails tendance :<br> </h1>
         </div>
       </div>
       <div class="item item-2">
         <div class="header-text">
           <span class="category"><em>ZÉRO </em>ALCOOL</span>
-          <h2>délices sans alcool</h2>
+          <h1>délices sans alcool</h1>
         </div>
       </div>
  
@@ -45,7 +45,7 @@
         <div class="header-text">
 
           <span class="category">Saveurs <em>locales et bio</em></span>
-          <h2>sensations inoubliables</h2>
+          <h1>sensations inoubliables</h1>
         </div>
         
       </div>

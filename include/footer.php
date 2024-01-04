@@ -1,6 +1,6 @@
 <footer class="text-center text-lg-start mt-xl-5 pt-4">
 
-    <div class="container p-4">
+    <nav class="container p-4">
 
         <div class="row">
 
@@ -44,7 +44,7 @@
             </div>
         </div>
 
-    </div>
+    </nav>
 
     <div class="text-center p-3 border-top border-white">
         © 2024 Copyright:

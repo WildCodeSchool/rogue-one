@@ -1,4 +1,4 @@
-<div class="sub-header">
+<nav class="sub-header">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-md-8">
@@ -17,7 +17,7 @@
             </div>
         </div>
     </div>
-</div>
+</nav>
 
 <header class="header-area header-sticky">
     <div class="container">

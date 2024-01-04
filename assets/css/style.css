@@ -1224,7 +1224,7 @@ Properties Style
  Style
 --------------------------------------------- 
 */
-Contact
+
 .contact {
   background-image: url(../images/contact-bg.jpg);
   background-repeat: no-repeat;
@@ -1403,7 +1403,7 @@ Page Header Style
   color: #1e1e1e;
 }
 
-.page-heading h3 {
+.page-heading h1 {
   font-size: 48px;
   font-weight: 900;
   text-transform: uppercase;

@@ -26,7 +26,7 @@
       <div class="row">
         <div class="col-lg-12">
           <span class="breadcrumb"><a href="#">À propos de nous</span>
-          <h3>À propos de nous</h3>
+          <h1>À propos de nous</h1>
         </div>
       </div>
     </div>
