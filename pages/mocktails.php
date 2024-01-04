@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-  <title>Nos Mocktails</title>
+  <title>Mocktail Céleste - Nos Mocktails</title>
 
   <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/fontawesome.css">
@@ -15,6 +15,8 @@
   <link rel="stylesheet" href="../assets/css/animate.css">
   <link rel="stylesheet" href="../assets/css/mocktails.css">
   <link rel="stylesheet" href="../assets/css/mocktail-detail.css">
+  <link rel="stylesheet" href="../assets/css/footer.css">
+  <link rel="icon" type="image/png" href="../assets/images/logo.png" />
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 </head>
 
@@ -22,16 +24,14 @@
 
 <body>
 
-  <div id="js-preloader" class="js-preloader">
-    <div class="preloader-inner">
-      <span class="dot"></span>
-      <div class="dots">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </div>
-  </div>
+<?php require_once("../include/products.php"); ?>
+
+<?php require_once("../include/preloader_js.php") ?>
+</head>
+
+
+
+<body>
 
   <?php include_once("../include/navbar.php") ?>
 
@@ -71,11 +71,13 @@
     <li>
         <a href="#!" data-filter=".mariages-saveurs-uniques">Mariages de Saveurs Uniques</a>
     </li>
+
       </ul>
 
       <div class="row mocktails-box">
 
         <?php
+
         foreach ($mocktails as $mocktailName => $mocktailData) {
           $mocktailImage = "../assets/images/mocktails/" . $mocktailData["image"];
           $mocktailCategory = $mocktailData["category"];
@@ -89,11 +91,12 @@
               <div class="main-button">
                 <a>Voir le produit</a>
               </div>
+
             </div>
           </div>';
         }
         ?>
-        <!-- Section des détails du produit -->
+
         <div class="product-details" style="display: none;">
           <div class="main-content">
             <h2 id="product-name"></h2>
@@ -109,8 +112,6 @@
 
       </div>
 
-
-
 </div>
 
   <?php include_once("../include/footer.php") ?>
@@ -125,62 +126,59 @@
   <script>
   const buttons = document.querySelectorAll('.main-button a');
   const productDetails = document.querySelector('.product-details');
-  const categories = document.getElementById('categories'); // Sélection de la liste des catégories
+  const categories = document.getElementById('categories');
 
   buttons.forEach((button, index) => {
     button.addEventListener('click', (event) => {
-      event.preventDefault(); // Empêcher le comportement par défaut du lien
+      event.preventDefault();
 
       const product = <?php echo json_encode($mocktails); ?>;
       const productName = Object.keys(product)[index];
       const selectedProduct = product[productName];
 
-      // Afficher les détails du produit sélectionné
       document.getElementById('product-name').innerText = productName;
       document.getElementById('product-category').innerText = `Catégorie: ${selectedProduct.category}`;
       document.getElementById('product-detail').innerText = selectedProduct.detail;
       document.getElementById('product-image').src = `../assets/images/mocktails/${selectedProduct.image}`;
      
       document.addEventListener('DOMContentLoaded', function() {
-  var contentElement = document.querySelector('.mocktails-items'); // Remplacez '.mocktails-items' par le sélecteur de votre contenu
+  var contentElement = document.querySelector('.mocktails-items');
   if (contentElement) {
     var contentHeight = contentElement.offsetHeight;
-    document.body.style.height = contentHeight + 'px'; // Ajuste la hauteur du corps à la hauteur du contenu
+    document.body.style.height = contentHeight + 'px';
   }
 });
-      // Cacher la liste des catégories
+
       categories.style.display = 'none';
 
-      // Cacher tous les éléments mocktails-items
+      
       const allItems = document.querySelectorAll('.mocktails-items');
       allItems.forEach(item => {
         item.style.display = 'none';
       });
 
-      // Afficher la section product-details
+      
       productDetails.style.display = 'block';
 
-      // Scroller jusqu'à la section des détails du produit
+      
       productDetails.scrollIntoView({
-        behavior: 'auto', // Défilement instantané
-        block: 'start', // Aligner le haut de l'élément à la position de départ du scroll
+        behavior: 'auto',
+        block: 'start',
       });
     });
   });
 
   document.querySelector('.close-btn').addEventListener('click', () => {
-    // Afficher la liste des catégories lorsque le bouton "Fermer" est cliqué
+    
     categories.style.display = 'block';
 
-    // Afficher tous les éléments mocktails-items
+    
     const allItems = document.querySelectorAll('.mocktails-items');
     allItems.forEach(item => {
       item.style.display = 'block';
     });
 
   });
-
-
 
   </script>
 
