@@ -16,8 +16,8 @@
   <link rel="stylesheet" href="../assets/css/owl.css">
   <link rel="stylesheet" href="../assets/css/animate.css">
   <link rel="stylesheet" href="../assets/css/footer.css">
-  <link rel="icon" type="image/png" href="../assets/images/logo.png" />
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <link rel="icon" type="image/png" href="../assets/images/logo.png" />
 </head>
 
 <body>
@@ -40,17 +40,17 @@
           <h1>délices sans alcool</h1>
         </div>
       </div>
- 
+
       <div class="item item-3">
         <div class="header-text">
 
           <span class="category">Saveurs <em>locales et bio</em></span>
           <h1>sensations inoubliables</h1>
         </div>
-        
+
       </div>
-        </div>
-      </div>
+    </div>
+  </div>
 
 
   <?php include_once("include/footer.php") ?>
