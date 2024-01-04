@@ -8,11 +8,13 @@
 
  footer {
    color: var(--white-color);
+   background-color: var(--main-color);
  }
 
  footer p,
  a {
    font-size: 12px;
+   color: var(--seondary-color);
  }
 
  footer h6 {
