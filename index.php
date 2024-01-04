@@ -1,5 +1,5 @@
-<?php 
+<?php
 
-include_once("pages/home.php");
+include_once("../rogue-one/pages/home.php");
 
 ?>
