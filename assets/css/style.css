@@ -310,7 +310,6 @@ Header Style
 
 .sub-header .info a :hover {
   color: var(--secondary-color);
-
 }
 
 .sub-header ul li {
@@ -1224,8 +1223,7 @@ Properties Style
  Style
 --------------------------------------------- 
 */
-Contact
-.contact {
+Contact .contact {
   background-image: url(../images/contact-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
