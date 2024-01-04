@@ -3,6 +3,9 @@
 Single Page Style
 --------------------------------------------- 
 */
+#mocktails-data {
+  display: none;
+}
 
 .detail-mocktail .main-image img {
   float: none;
@@ -104,8 +107,11 @@ Single Page Style
 }
 
 div.product-details {
-  
   height: 5px;
+}
+
+.product-details {
+  display: none;
 }
 
 .product-details #product-image {

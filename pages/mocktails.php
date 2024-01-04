@@ -33,7 +33,6 @@
     </div>
   </div>
   
-
   <div class="section mocktails">
     <div class="container">
       <ul class="mocktails-filter" id="categories">
@@ -215,7 +214,7 @@
         }
         ?>
         
-        <div class="product-details" style="display: none;">
+        <div class="product-details" hidden">
           <div class="main-content">
             <h2 id="product-name"></h2>
             <span id="product-category"></span>
@@ -230,7 +229,7 @@
 
       </div>
 
-      <div id="mocktails-data" style="display: none;">
+      <div id="mocktails-data" hidden">
         <?php echo json_encode($mocktails); ?>
       </div>
 
