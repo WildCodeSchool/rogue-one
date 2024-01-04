@@ -1,10 +1,7 @@
 <footer>
-    <div id="footer-content">
-        <div id="copyright">
-            <p>&copy; <?php echo date("Y"); ?> Rogue-one. Tous droits réservés.</p>
-        </div>
-        <div id="mentions-legales">
-            <a href="mentions-legales.php">Mentions légales</a>
+    <div class="container">
+        <div class="col-lg-8">
+            <p>Copyright © 2048</p>
         </div>
     </div>
 </footer>

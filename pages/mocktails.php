@@ -20,16 +20,13 @@
 
 <body>
 
-  <div id="js-preloader" class="js-preloader">
-    <div class="preloader-inner">
-      <span class="dot"></span>
-      <div class="dots">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </div>
-  </div>
+  <link rel="stylesheet" href="../assets/css/footer.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+  <?php include_once("../include/preloader_js.php") ?>
 
   <?php include_once("../include/navbar.php") ?>
 
@@ -38,6 +35,8 @@
       <div class="row">
         <div class="col-lg-12">
           <span class="breadcrumb"><a href="#">Accueil</a> / Nos Mocktails</span>
+
+          <span class="breadcrumb">Nos Mocktails</span>
           <h3>Nos Mocktails</h3>
         </div>
       </div>
@@ -256,7 +255,6 @@
   <script src="../assets/js/counter.js"></script>
   <script src="../assets/js/custom.js"></script>
   <script src="../assets/js/page-detail.js"></script>
-
 
 </body>
 
