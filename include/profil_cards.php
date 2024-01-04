@@ -20,7 +20,7 @@
                 "role" => "Développeur Web",
                 "img" => "../assets/images/team/member3.jpg",
                 "desc" => "Je suis Joël, un développeur web passionné par la création d'expériences en ligne exceptionnelles. Fort de 3 années d'expérience dans le domaine du développement web, j'ai acquis une expertise approfondie dans la conception, le développement et la maintenance de sites web dynamiques et réactifs.",
-                "link" => "https://www.linkedin.com/in/mayemba/"
+                "link" => "joelmayemba@gmail.com"
             ],
             [
                 "firstname" => "Kévin",
@@ -43,7 +43,7 @@
                 <hr>
                 <p>' . $member["desc"] . '</p>
                 <hr>
-                <a href="' . $member["link"] . '"class="btn" target="_blank">Voir plus</a>
+                <a href="mailto:' . $member["link"] . '"class="btn">Me contacter</a>
             </div>
         </div>';
         }

@@ -477,7 +477,7 @@ Header Style
 }
 
 .header-area .main-nav .nav li:last-child:hover a i {
-  color: #fff;
+  color: var(--main-color);
 }
 
 .header-area .main-nav .nav li:hover a {

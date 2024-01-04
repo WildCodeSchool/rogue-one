@@ -38,16 +38,16 @@
         <div class="col-lg-12">
           <div class="section-heading">
             <h6>| À propos de nous</h6>
-            <h2>L'histoire de nos Mocktails. Qui Sommes Nous ?</h2>
+            <h2>L'history de nos Mocktails. Qui Sommes Nous ?</h2>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div id="notre-histoire">
-    <div class="histoire-content">
-      <div class="histoire-texte">
+  <div id="notre-history">
+    <div class="history-content">
+      <div class="history-texte">
         <p>Nos Mocktails sont des Cocktails SANS ALCOOL.
           Ces pépites culinaires aux saveurs LOCALES sont
           les fruits du beau travail de Mme Surya GIRAULT
@@ -68,7 +68,7 @@
           tables de restaurants du Péyi !
         </p>
       </div>
-      <div class="histoire-images">
+      <div class="history-images">
         <img src="../assets/images/mocktail1.png" alt="">
       </div>
     </div>
@@ -80,7 +80,6 @@
   <?php include_once("../include/profil_cards.php") ?>
   <?php include_once("../include/footer.php") ?>
 
-  <script src="../vendor/jquery/jquery.min.js"></script>
   <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
   <script src="../assets/js/isotope.min.js"></script>
   <script src="../assets/js/owl-carousel.js"></script>

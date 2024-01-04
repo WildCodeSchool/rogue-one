@@ -22,7 +22,7 @@
 
 <body>
 
-  <?php include_once("include/preloader_js.php") ?>
+
   <?php include_once("include/navbar.php") ?>
 
   <div class="main-banner">

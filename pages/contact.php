@@ -11,13 +11,13 @@
   <link rel="stylesheet" href="../assets/css/style.css">
   <link rel="stylesheet" href="../assets/css/owl.css">
   <link rel="stylesheet" href="../assets/css/animate.css">
+  <link rel="stylesheet" href="../assets/css/footer.css">
   <link rel="icon" type="image/png" href="../assets/images/logo.png" />
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 </head>
 
 <body>
 
-  <?php include_once("../include/preloader_js.php") ?>
   <?php include_once("../include/navbar.php") ?>
 
   <div class="page-heading header-text">

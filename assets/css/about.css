@@ -1,10 +1,10 @@
-#notre-histoire {
+#notre-history {
   max-height: 100%;
   margin-top: 0;
   margin-bottom: 0;
 }
 
-.histoire-content {
+.history-content {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -13,22 +13,22 @@
   margin-bottom: 30px;
 }
 
-.histoire-images,
-.histoire-texte {
+.history-images,
+.history-texte {
   width: 35%;
 }
 
-.histoire-images img {
+.history-images img {
   max-width: 100%;
   height: auto;
   border-radius: 50%;
 }
 
-.histoire-texte p {
+.history-texte p {
   font-size: 1.5rem;
 }
 
-.histoire-content::after {
+.history-content::after {
   content: "";
   display: table;
   clear: both;
