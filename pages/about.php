@@ -15,13 +15,16 @@
   <link rel="stylesheet" href="../assets/css/profil_cards.css">
   <link rel="stylesheet" href="../assets/css/footer.css">
   <link rel="icon" type="image/png" href="../assets/images/logo.png">
-  <link rel="icon" type="image/png" href="../../assets/images/logo.png"/>
+  <link rel="icon" type="image/png" href="../../assets/images/logo.png" />
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 </head>
 
-<?php include_once("../include/navbar.php") ?>
-
 <body>
+
+  <header>
+    <?php include_once("include/navbar.php") ?>
+  </header>
+
   <div class="page-heading header-text">
     <div class="container">
       <div class="row">
@@ -46,9 +49,9 @@
     </div>
   </div>
 
-  <div id="notre-history">
+  <div id="history">
     <div class="history-content">
-      <div class="history-texte">
+      <div class="history">
         <p>Nos Mocktails sont des Cocktails SANS ALCOOL.
           Ces pépites culinaires aux saveurs LOCALES sont
           les fruits du beau travail de Mme Surya GIRAULT
@@ -75,7 +78,7 @@
     </div>
   </div>
 
-  <div class="banniere-separation">
+  <div class="separate-banner">
   </div>
 
   <?php include_once("../include/profil_cards.php") ?>

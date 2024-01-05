@@ -22,10 +22,12 @@
 
 <body>
 
-  <!-- <?php require_once("../include/preloader_js.php") ?> -->
-  <?php include_once("../include/navbar.php") ?>
+  <header>
+    <?php include_once("include/navbar.php") ?>
+  </header>
 
-  <div class="page-heading header-text">
+
+  <!-- <div class="page-heading header-text">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
@@ -34,8 +36,8 @@
         </div>
       </div>
     </div>
-  </div>
-  
+  </div> -->
+
   <div class="section mocktails">
     <div class="container">
       <ul class="mocktails-filter" id="categories">
@@ -216,7 +218,7 @@
           </div>';
         }
         ?>
-        
+
         <div class="product-details" hidden">
           <div class="main-content">
             <h2 id="product-name"></h2>
@@ -231,21 +233,21 @@
         </div>
       </div>
 
-    <div id="mocktails-data" hidden">
-      <?php echo json_encode($mocktails); ?>
+      <div id="mocktails-data" hidden">
+        <?php echo json_encode($mocktails); ?>
+      </div>
+
     </div>
 
-  </div>
+    <?php include_once("../include/footer.php") ?>
 
-  <?php include_once("../include/footer.php") ?>
-
-  <script src="../vendor/jquery/jquery.min.js"></script>
-  <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
-  <script src="../assets/js/isotope.min.js"></script>
-  <script src="../assets/js/owl-carousel.js"></script>
-  <script src="../assets/js/counter.js"></script>
-  <script src="../assets/js/custom.js"></script>
-  <script src="../assets/js/page-detail.js"></script>
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../assets/js/isotope.min.js"></script>
+    <script src="../assets/js/owl-carousel.js"></script>
+    <script src="../assets/js/counter.js"></script>
+    <script src="../assets/js/custom.js"></script>
+    <script src="../assets/js/page-detail.js"></script>
 
 </body>
 
