@@ -1,0 +1,182 @@
+/* 
+---------------------------------------------
+Responsive Style
+--------------------------------------------- 
+*/
+
+body {
+  overflow-x: hidden;
+}
+
+#mobile-menu {
+  display: none;
+}
+
+#mobile-menu.open {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-toggle {
+    display: block;
+  }
+
+  .navbar-collapse {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .header-area .main-nav .logo h1 {
+    line-height: 80px !important;
+  }
+
+  .best-deal .tabs-content .nav-link {
+    font-size: 14px;
+    padding: 0px 15px;
+    height: 44px;
+    line-height: 44px;
+  }
+
+  .best-deal .tabs-content ul.nav-tabs li {
+    margin: 0px 5px;
+  }
+
+  .mocktails ul.mocktails-filter li a {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+
+  .mocktails ul.mocktails-filter li {
+    margin: 5px;
+  }
+
+  .header-area .main-nav .nav li:last-child {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .sub-header {
+    display: none;
+  }
+
+  .header-area .main-nav .logo h1 {
+    line-height: 100px;
+  }
+
+  .background-header .main-nav .logo h1 {
+    line-height: 80px;
+  }
+
+  .header-area .main-nav .nav li a {
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+
+  .header-area .main-nav .nav li:last-child a {
+    padding-right: 15px;
+  }
+
+  .main-banner .item h2 {
+    width: 100%;
+  }
+
+  .featured .section-heading {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 100px;
+  }
+
+  .featured .accordion {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .featured .info-table {
+    margin-top: 45px;
+  }
+
+  .fun-facts .counter {
+    margin-bottom: 45px;
+  }
+
+  .best-deal .section-heading {
+    text-align: center;
+  }
+
+  .best-deal .tabs-content ul.nav-tabs {
+    margin-top: 0px;
+    justify-content: center;
+  }
+
+  .best-deal .info-table {
+    margin-bottom: 45px;
+  }
+
+  .best-deal .tab-content img {
+    padding: 0px;
+  }
+
+  .best-deal .tabs-content h4 {
+    margin-top: 45px;
+  }
+
+  .mocktails .item h6 {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .mocktails .item .main-button {
+    text-align: center;
+  }
+
+  .mocktails .item ul li {
+    margin-right: 10px;
+    font-size: 13px;
+  }
+
+  .contact-content .phone {
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+
+  .contact-content .email {
+    margin-left: 0px;
+    margin-bottom: 45px;
+  }
+
+  .contact-content #contact-form {
+    margin-left: 0px;
+  }
+
+  .single-property .info-table {
+    margin-left: 0px;
+    margin-top: 45px;
+  }
+
+  .contact-page .section-heading {
+    margin-right: 0px !important;
+  }
+
+  .contact-page #contact-form {
+    margin-left: 0px;
+    margin-top: 60px;
+  }
+
+  .best-deal .info-table ul li span {
+    float: right !important;
+    width: auto !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  .best-deal .info-table ul li span {
+    float: none;
+    width: 100%;
+  }
+
+  .contact-page .section-heading {
+    margin-right: 100px;
+  }
+}

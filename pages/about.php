@@ -32,22 +32,22 @@
     </div>
   </div>
 
-  <div class="apropos-page section">
+  <div class="about-page section">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
           <div class="section-heading">
             <h6>| À propos de nous</h6>
-            <h2>L'history de nos Mocktails. Qui Sommes Nous ?</h2>
+            <h2>L'histoire de nos Mocktails. Qui Sommes Nous ?</h2>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div id="notre-history">
+  <div id="history">
     <div class="history-content">
-      <div class="history-texte">
+      <div class="history-text">
         <p>Nos Mocktails sont des Cocktails SANS ALCOOL.
           Ces pépites culinaires aux saveurs LOCALES sont
           les fruits du beau travail de Mme Surya GIRAULT
@@ -74,7 +74,7 @@
     </div>
   </div>
 
-  <div class="banniere-separation">
+  <div class="banner-separation">
   </div>
 
   <?php include_once("../include/profil_cards.php") ?>

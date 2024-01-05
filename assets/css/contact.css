@@ -1,0 +1,250 @@
+/* 
+---------------------------------------------
+Contact Style
+--------------------------------------------- 
+*/
+
+.contact {
+  background-image: url(../images/contact-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 100px 0px 250px 0px;
+  position: relative;
+}
+
+.contact .section-heading h2 {
+  color: #fff;
+}
+
+.contact-content {
+  margin-top: -240px;
+  position: relative;
+  z-index: 1;
+}
+
+.contact-content #map {
+  border-radius: 10px;
+  margin-bottom: 60px;
+}
+
+.contact-content .item {
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+  padding: 35px 30px;
+  background-color: #fff;
+}
+
+.contact-content .phone {
+  margin-right: 15px;
+}
+
+.contact-content .email {
+  margin-left: 15px;
+}
+
+.contact-content .item img {
+  float: left;
+  margin-right: 25px;
+  vertical-align: middle;
+}
+
+.contact-content .item h6 {
+  font-size: 20px;
+  font-weight: 600;
+  vertical-align: middle;
+}
+
+.contact-content .item h6 span {
+  font-size: 15px;
+  color: #aaaaaa;
+  font-weight: 400;
+}
+
+.contact-content #contact-form {
+  margin-left: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+  padding: 35px 30px;
+  background-color: #fff;
+}
+
+.contact-content #contact-form label {
+  font-size: 15px;
+  color: #3a3a3a;
+  margin-bottom: 15px;
+}
+
+.contact-content #contact-form input {
+  width: 100%;
+  height: 44px;
+  border-radius: 22px;
+  background-color: #f6f6f6;
+  border: none;
+  margin-bottom: 30px;
+  font-size: 14px;
+  padding: 0px 15px;
+}
+
+.contact-content #contact-form textarea {
+  width: 100%;
+  height: 150px;
+  max-height: 180px;
+  border-radius: 22px;
+  background-color: #f6f6f6;
+  border: none;
+  margin-bottom: 40px;
+  font-size: 14px;
+  padding: 15px 15px;
+}
+
+.contact-content #contact-form button {
+  background-color: #1e1e1e;
+  height: 44px;
+  border-radius: 22px;
+  padding: 0px 20px;
+  color: #fff;
+  border: none;
+  font-size: 15px;
+  font-weight: 500;
+  transition: all 0.5s;
+}
+
+.contact-content #contact-form button:hover {
+  background-color: var(--main-color);
+}
+
+/* Footer */
+
+footer {
+  margin-top: 150px;
+  background-color: orange;
+  /* background-color: var(--main-color); */
+  padding: 10px;
+  width: 100%;
+}
+
+#footer-content {
+  text-align: center;
+  line-height: 100px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+}
+
+#copyright,
+#mentions-legales {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+#copyright p,
+#mentions-legales a {
+  color: #fff;
+  transition: all 0.3s;
+  position: relative;
+  z-index: 3;
+}
+
+#copyright p:hover,
+#mentions-legales a:hover {
+  opacity: 0.75;
+}
+
+.contact-page #map {
+  margin-top: 100px;
+}
+
+.contact-page .section-heading {
+  margin-bottom: 40px;
+  margin-right: 280px;
+}
+
+.contact-page p {
+  margin-bottom: 50px;
+}
+
+.contact-page .item {
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+  padding: 35px 30px;
+  background-color: #fff;
+  display: inline-block;
+  min-width: 360px;
+}
+
+.contact-page .phone {
+  margin-bottom: 30px;
+}
+
+.contact-page .item img {
+  float: left;
+  margin-right: 25px;
+  vertical-align: middle;
+}
+
+.contact-page .item h6 {
+  font-size: 20px;
+  font-weight: 600;
+  vertical-align: middle;
+}
+
+.contact-page .item h6 span {
+  font-size: 15px;
+  color: #aaaaaa;
+  font-weight: 400;
+}
+
+.contact-page #contact-form {
+  margin-left: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+  padding: 35px 30px;
+  background-color: #fff;
+}
+
+.contact-page #contact-form label {
+  font-size: 15px;
+  color: #3a3a3a;
+  margin-bottom: 15px;
+}
+
+.contact-page #contact-form input {
+  width: 100%;
+  height: 44px;
+  border-radius: 22px;
+  background-color: #f6f6f6;
+  border: none;
+  margin-bottom: 30px;
+  font-size: 14px;
+  padding: 0px 15px;
+}
+
+.contact-page #contact-form textarea {
+  width: 100%;
+  height: 150px;
+  max-height: 180px;
+  border-radius: 22px;
+  background-color: #f6f6f6;
+  border: none;
+  margin-bottom: 40px;
+  font-size: 14px;
+  padding: 15px 15px;
+}
+
+.contact-page #contact-form button {
+  background-color: #1e1e1e;
+  height: 44px;
+  border-radius: 22px;
+  padding: 0px 20px;
+  color: #fff;
+  border: none;
+  font-size: 15px;
+  font-weight: 500;
+  transition: all 0.5s;
+}
+
+.contact-page #contact-form button:hover {
+  background-color: var(--main-color);
+}

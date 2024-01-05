@@ -1,4 +1,6 @@
-#notre-history {
+@import "style.css";
+
+#history {
   max-height: 100%;
   margin-top: 0;
   margin-bottom: 0;
@@ -14,7 +16,7 @@
 }
 
 .history-images,
-.history-texte {
+.history-text {
   width: 35%;
 }
 
@@ -24,7 +26,7 @@
   border-radius: 50%;
 }
 
-.history-texte p {
+.history-text p {
   font-size: 1.5rem;
 }
 
@@ -34,7 +36,39 @@
   clear: both;
 }
 
-.banniere-separation {
+.banner-separation {
   background-color: var(--white-color);
   height: 8vh;
+}
+
+#team {
+  max-height: 100%;
+}
+
+.team-membres {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.membre {
+  width: calc(33.33% - 300px);
+  text-align: center;
+  flex: 0.25;
+  background-color: var(--main-color);
+  border-radius: 15%;
+  padding: 1vh;
+  /* border: 1px solid #000; */
+}
+
+.membre img {
+  max-width: 70%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.membre-intro p {
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.8;
 }
