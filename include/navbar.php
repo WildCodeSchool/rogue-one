@@ -37,7 +37,7 @@
                         <li><a href="../pages/about.php">A propos</a></li>
                         <li><a href="#"><i class="fa fa-calendar"></i>Commander</a></li>
                     </ul>
-                    <a class='menu-trigger'>
+                    <a class='menu-trigger' id="menu-trigger">
                         <span>Menu</span>
                     </a>
 
@@ -53,3 +53,4 @@
 <script src="../assets/js/owl-carousel.js"></script>
 <script src="../assets/js/counter.js"></script>
 <script src="../assets/js/custom.js"></script>
+

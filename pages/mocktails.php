@@ -15,6 +15,8 @@
   <link rel="stylesheet" href="../assets/css/animate.css">
   <link rel="stylesheet" href="../assets/css/mocktails.css">
   <link rel="stylesheet" href="../assets/css/mocktail-detail.css">
+  <link rel="stylesheet" href="../assets/css/footer.css">
+  <link rel="icon" type="image/png" href="../assets/images/logo.png">
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 </head>
 
@@ -244,6 +246,7 @@
   <script src="../assets/js/counter.js"></script>
   <script src="../assets/js/custom.js"></script>
   <script src="../assets/js/page-detail.js"></script>
+<script src="../assets/js/navbar.js"></script>
 
 
 </body>

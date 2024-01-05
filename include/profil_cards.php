@@ -2,7 +2,7 @@
     <div class="row">
         <div class="col-sm-6 offset-sm-3 mt-4 mb-4">
             <h2 class="text-center">Notre équipe Dev</h2>
-            <p class="text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+            <p class="text-center"></p>
         </div>
     </div>
     <div class="row">
@@ -12,9 +12,10 @@
                 "firstname" => "Chouaib",
                 "role" => "Développeur Web",
                 "img" => "../assets/images/team/member1.png",
-                "desc" => "Bonjour, je suis Janah Chouaib, un passionné de développement web âgé de 25 ans. Mon enthousiasme pour l'informatique et la programmation me pousse constamment à explorer de nouveaux horizons. Je trouve un équilibre entre ma passion pour le code et mes autres centres d'intérêt tels que les voyages, le sport et les jeux vidéo. Voyager me permet de découvrir des cultures diverses, tandis que le sport me procure l'énergie nécessaire pour relever les défis du développement web. Les jeux vidéo sont une source de détente et de plaisir dans mon quotidien. Je suis avide d'apprentissage et je considère chaque obstacle comme une opportunité d'acquérir de nouvelles compétences. Ma persévérance, mon courage et ma patience sont les moteurs qui me permettent d'atteindre mes objectifs dans le monde du développement web.",
-                "email" => "",
-                "link" => ""
+                "desc" => "Bonjour, je suis Janah Chouaib, un passionné de développement web. Mon enthousiasme pour l'informatique et la programmation me pousse constamment à explorer de nouveaux
+                 horizons.",
+                "email" => "janahchouaib@gmail.com",
+                "link" => "https://www.linkedin.com/in/cjanah/"
             ],
             [
                 "firstname" => "Joël",

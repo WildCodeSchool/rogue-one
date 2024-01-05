@@ -15,7 +15,6 @@
   <link rel="stylesheet" href="../assets/css/profil_cards.css">
   <link rel="stylesheet" href="../assets/css/footer.css">
   <link rel="icon" type="image/png" href="../assets/images/logo.png">
-  <link rel="icon" type="image/png" href="../../assets/images/logo.png"/>
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 </head>
 

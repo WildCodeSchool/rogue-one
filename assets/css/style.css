@@ -1483,111 +1483,6 @@ mocktails Style
 
 /* 
 ---------------------------------------------
-Single Page Style
---------------------------------------------- 
-*/
-
-.single-property .main-image img {
-  float: none;
-}
-
-.single-property .main-content h4 {
-  font-size: 25px;
-  margin-top: 25px;
-  margin-bottom: 40px;
-  padding-bottom: 40px;
-  border-bottom: 1px solid #eee;
-}
-
-.single-property .main-content span.category {
-  background-color: #fbd9cf;
-  font-weight: 500;
-  border-radius: 5px;
-  font-size: 14px;
-  color: #1e1e1e;
-  padding: 5px 12px;
-  display: inline-block;
-  margin-top: 40px;
-}
-
-.single-property .accordion {
-  margin-top: 60px;
-  margin-left: 0px;
-  margin-right: 0px;
-  --bs-accordion-border-radius: 10px;
-  --bs-accordion-inner-border-radius: 10px;
-  --bs-accordion-bg: #fafafa;
-  --bs-accordion-border-color: none;
-  border: none !important;
-}
-
-.single-property .accordion-header {
-  border-bottom: 1px solid #eaeaea;
-}
-
-.single-property .accordion-button {
-  box-shadow: none;
-  font-size: 17px;
-  font-weight: 500;
-  color: #1e1e1e;
-}
-
-.single-property .accordion-button:not(.collapsed) {
-  color: var(--main-color);
-  background-color: #fafafa;
-  outline: none;
-}
-
-.single-property .accordion-button::after {
-  display: none;
-}
-
-.single-property #headingThree {
-  border-bottom: none;
-}
-
-.single-property .accordion-item:last-of-type .accordion-collapse {
-  border-top: 1px solid #eaeaea;
-}
-
-.single-property .info-table {
-  border-radius: 10px;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
-  padding: 35px 30px;
-  margin-left: 60px;
-}
-
-.single-property .info-table ul li {
-  display: block;
-  margin-bottom: 35px;
-  padding-bottom: 35px;
-  border-bottom: 1px solid #eee;
-}
-
-.single-property .info-table ul li:last-child {
-  border-bottom: none;
-  padding-bottom: 0;
-  margin-bottom: 0;
-}
-
-.single-property .info-table ul li img {
-  float: left;
-  margin-right: 25px;
-}
-
-.single-property .info-table ul li h4 {
-  font-size: 22px;
-  font-weight: 600;
-}
-
-.single-property .info-table ul li h4 span {
-  font-size: 15px;
-  color: #aaa;
-  font-weight: 400;
-}
-
-/* 
----------------------------------------------
 Contact Page Style
 --------------------------------------------- 
 */
@@ -1776,6 +1671,24 @@ Responsive Style
 
 body {
   overflow-x: hidden;
+}
+
+#mobile-menu {
+  display: none;
+}
+
+#mobile-menu.open {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-toggle {
+    display: block;
+  }
+
+  .navbar-collapse {
+    display: none;
+  }
 }
 
 @media (max-width: 767px) {
