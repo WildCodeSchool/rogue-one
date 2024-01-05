@@ -22,10 +22,8 @@
 
 <body>
 
-  <header>
-    <?php include_once("include/navbar.php") ?>
-  </header>
 
+  <?php include_once("include/navbar.php") ?>
 
   <div class="main-banner">
     <div class="owl-carousel owl-banner">
