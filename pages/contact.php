@@ -25,7 +25,7 @@
       <div class="row">
         <div class="col-lg-12">
           <span class="breadcrumb"><a href="#">Nous contacter</span>
-          <h3>Nous contacter</h3>
+          <h1>Nous contacter</h1>
         </div>
       </div>
     </div>

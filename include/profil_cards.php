@@ -42,7 +42,7 @@
                     <img src="' . $member["img"] . '" class="img-fluid" alt="User Pic">
                 </div>
                 <h4>' . $member["firstname"] . '</h4>
-                <h6>' . $member["role"] . '</h6>
+                <h5>' . $member["role"] . '</h5>
                 <hr>
                 <p>' . $member["desc"] . '</p>
                 <hr>

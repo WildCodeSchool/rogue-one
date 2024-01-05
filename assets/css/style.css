@@ -140,7 +140,7 @@ body {
 }
 
 .section-heading h6 {
-  color: #ee626b;
+  color: var(--main-color);
   font-size: 15px;
   text-transform: uppercase;
   font-weight: 700;
@@ -304,9 +304,13 @@ Header Style
 */
 
 .sub-header {
-  background-color: #fff;
+  background-color: var(--white-color);
   padding: 10px 0px;
   border-bottom: 1px solid #eee;
+}
+
+.sub-header .info a :hover {
+  color: var(--secondary-color);
 }
 
 .sub-header ul li {
@@ -477,7 +481,7 @@ Header Style
 }
 
 .header-area .main-nav .nav li:last-child:hover a i {
-  color: #fff;
+  color: var(--main-color);
 }
 
 .header-area .main-nav .nav li:hover a {
@@ -1217,7 +1221,7 @@ mocktails Style
 
 /* 
 ---------------------------------------------
-Contact Style
+ Style
 --------------------------------------------- 
 */
 
@@ -1376,7 +1380,7 @@ Page Header Style
 */
 
 .page-heading {
-  background-image: url(../images/page-heading-bg.png);
+  background-image: url(../images/banner/Banniere.jpg);
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1399,7 +1403,7 @@ Page Header Style
   color: #1e1e1e;
 }
 
-.page-heading h3 {
+.page-heading h1 {
   font-size: 48px;
   font-weight: 900;
   text-transform: uppercase;
