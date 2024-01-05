@@ -6,11 +6,6 @@
     $("#js-preloader").addClass("loaded");
   });
 
-
-	$(window).scroll(function() {
-	  let scroll = $(window).scrollTop();
-	  let box = $('.header-text').height();
-	  let header = $('header').height();
   $(window).scroll(function () {
     var scroll = $(window).scrollTop();
     var box = $(".header-text").height();
@@ -84,7 +79,6 @@
     });
   }
 
-
   // Menu elevator animation
   $(".scroll-to-section a[href*=\\#]:not([href=\\#])").on("click", function () {
     if (
@@ -132,4 +126,4 @@
       }
     );
   });
-})(window.jQuery);})
+})(window.jQuery);

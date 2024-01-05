@@ -309,10 +309,6 @@ Header Style
   border-bottom: 1px solid #eee;
 }
 
-.sub-header .info a :hover {
-  color: var(--secondary-color);
-}
-
 .sub-header ul li {
   display: inline-block;
 }
@@ -481,7 +477,7 @@ Header Style
 }
 
 .header-area .main-nav .nav li:last-child:hover a i {
-  color: var(--main-color);
+  color: #fff;
 }
 
 .header-area .main-nav .nav li:hover a {
@@ -1221,7 +1217,7 @@ mocktails Style
 
 /* 
 ---------------------------------------------
- Style
+Contact Style
 --------------------------------------------- 
 */
 
@@ -1380,7 +1376,7 @@ Page Header Style
 */
 
 .page-heading {
-  background-image: url(../images/banner/Banniere.jpg);
+  background-image: url(../images/page-heading-bg.png);
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1403,7 +1399,7 @@ Page Header Style
   color: #1e1e1e;
 }
 
-.page-heading h1 {
+.page-heading h3 {
   font-size: 48px;
   font-weight: 900;
   text-transform: uppercase;
