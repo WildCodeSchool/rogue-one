@@ -34,24 +34,23 @@
                     "link" => ""
                 ]
             ];
+?>
+            <?php foreach ($members as $member) :?>
 
-            foreach ($members as $member) {
-
-                echo '<div class="col-md-4">
+            <div class="col-md-4">
             <div class="card-box text-center">
                 <div class="user-pic">
-                    <img src="' . $member["img"] . '" class="img-fluid" alt="User Pic">
+                    <img src=" <?=$member["img"]?>" class="img-fluid" alt="User Pic">
                 </div>
-                <h4>' . $member["firstname"] . '</h4>
-                <h5>' . $member["role"] . '</h5>
+                <h4> <?=$member["firstname"]?></h4>
+                <h5> <?=$member["role"]?></h5>
                 <hr>
-                <p>' . $member["desc"] . '</p>
+                <p> <?=$member["desc"]?></p>
                 <hr>
-                <a href="mailto:' . $member["link"] . '"class="btn">Me contacter</a>
+                <a href="mailto: <?=$member["link"] ?>"class="btn">Me contacter</a>
             </div>
-        </div>';
-            }
-            ?>
+        </div>
+           <?php endforeach ;?>
         </div>
     </div>
 </main>

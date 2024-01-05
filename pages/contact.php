@@ -19,7 +19,7 @@
 <body>
 
   <header>
-    <?php include_once("include/navbar.php") ?>
+    <?php include_once("../include/navbar.php") ?>
   </header>
 
   <div class="page-heading header-text">
