@@ -1376,7 +1376,7 @@ Page Header Style
 */
 
 .page-heading {
-  background-image: url(../images/page-heading-bg.png);
+  background-image: url(../images/banner/Banniere.jpg);
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1399,7 +1399,7 @@ Page Header Style
   color: #1e1e1e;
 }
 
-.page-heading h3 {
+.page-heading h1 {
   font-size: 48px;
   font-weight: 900;
   text-transform: uppercase;
