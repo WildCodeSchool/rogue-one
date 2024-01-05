@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="../assets/css/owl.css">
   <link rel="stylesheet" href="../assets/css/animate.css">
   <link rel="stylesheet" href="../assets/css/footer.css">
+  <link rel="stylesheet" href="../assets/css/home.css">
   <link rel="icon" type="image/png" href="../assets/images/logo.png" />
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 </head>
@@ -52,6 +53,35 @@
         </div>
       </div>
 
+
+<div class="enjoy-our-mocktails">
+  <div class="h2-savourez-nos-mocktails-container">
+    <h2>Savourez nos Mocktails</h2>
+  </div>
+<section class="enjoy-our-mocktails-section">
+<article>
+  <div>
+    <img src="" alt="">
+  </div>
+    <main><h3></h3></main>
+    <p>Adipisicing excepturi atque et quaerat recusandae Autem maiores quam ducimus mollitia voluptatibus enim Ab eaque impedit aperiam dolorem accusamus et Sunt at impedit nam sunt iste natus dicta. Vitae tempora?</p>
+  </article>
+<article>
+  <div>
+    <img src="" alt="">
+  </div>
+    <main><h3></h3></main>
+    <p>Lorem distinctio saepe ea eligendi debitis! Asperiores dolor quibusdam amet eos voluptatem? Similique fuga itaque nam corrupti mollitia. Non numquam exercitationem magnam eligendi deserunt. Iure voluptatem voluptatibus error laborum autem?</p>
+</article>
+<article>
+  <div>
+    <img src="" alt="">
+  </div>
+    <main><h3></h3></main>
+    <p>Lorem rerum libero cupiditate tempora dolorem Mollitia aperiam nihil repudiandae debitis illum non sed Perferendis sequi enim modi neque fugit quas, beatae! Eum saepe nemo adipisci ut iste? Perspiciatis hic?</p>
+</article>
+</section>
+</div>
 
   <?php include_once("include/footer.php") ?>
 
