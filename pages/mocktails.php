@@ -27,7 +27,7 @@
       <div class="row">
         <div class="col-lg-12">
           <span class="breadcrumb"><a href="#">Accueil</a> / Nos Mocktails</span>
-          <h3>Nos Mocktails</h3>
+          <h1>Nos Mocktails</h1>
         </div>
       </div>
     </div>
