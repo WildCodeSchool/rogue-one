@@ -1,4 +1,4 @@
-#notre-history {
+#history {
   max-height: 100%;
   margin-top: 0;
   margin-bottom: 0;
@@ -14,7 +14,7 @@
 }
 
 .history-images,
-.history-texte {
+.history {
   width: 35%;
 }
 
@@ -24,7 +24,7 @@
   border-radius: 50%;
 }
 
-.history-texte p {
+.history p {
   font-size: 1.5rem;
 }
 
@@ -34,7 +34,7 @@
   clear: both;
 }
 
-.banniere-separation {
+.separate-banner{
   background-color: var(--white-color);
   height: 8vh;
 }
