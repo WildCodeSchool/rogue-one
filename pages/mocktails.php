@@ -20,6 +20,7 @@
 
 <body>
 
+
   <?php include_once("../include/navbar.php") ?>
 
   <div class="page-heading header-text">
