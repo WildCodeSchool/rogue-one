@@ -7,9 +7,9 @@
   });
 
   $(window).scroll(function () {
-    var scroll = $(window).scrollTop();
-    var box = $(".header-text").height();
-    var header = $("header").height();
+    let scroll = $(window).scrollTop();
+    let box = $(".header-text").height();
+    let header = $("header").height();
 
     if (scroll >= box - header) {
       $("header").addClass("background-header");
@@ -39,7 +39,7 @@
     },
   });
 
-  var width = $(window).width();
+  let width = $(window).width();
   $(window).resize(function () {
     if (width > 767 && $(window).width() < 767) {
       location.reload();
@@ -86,10 +86,10 @@
         this.pathname.replace(/^\//, "") &&
       location.hostname == this.hostname
     ) {
-      var target = $(this.hash);
+      let target = $(this.hash);
       target = target.length ? target : $("[name=" + this.hash.slice(1) + "]");
       if (target.length) {
-        var width = $(window).width();
+        let width = $(window).width();
         if (width < 991) {
           $(".menu-trigger").removeClass("active");
           $(".header-area .nav").slideUp(200);

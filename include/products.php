@@ -1,5 +1,5 @@
 <?php
-$mocktails = [
+  $mocktails = [
     "WARA'TAIL" => [
     "image" => "wara'Tail.png",
     "category" => "energisants-naturels",

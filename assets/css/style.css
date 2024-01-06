@@ -194,8 +194,8 @@ body {
 
 .main-button:hover {
   background-color: var(--main-color);
-
   color: #000000;
+}
 
 /* 
 ---------------------------------------------
@@ -307,11 +307,6 @@ Header Style
   background-color: var(--white-color);
   padding: 10px 0px;
   border-bottom: 1px solid #eee;
-}
-
-.sub-header .info a :hover {
-  color: var(--secondary-color);
-
 }
 
 .sub-header ul li {
@@ -482,7 +477,7 @@ Header Style
 }
 
 .header-area .main-nav .nav li:last-child:hover a i {
-  color: var(--main-color);
+  color: #fff;
 }
 
 .header-area .main-nav .nav li:hover a {
@@ -1222,10 +1217,10 @@ mocktails Style
 
 /* 
 ---------------------------------------------
- Style
+Contact Style
 --------------------------------------------- 
 */
-Contact
+
 .contact {
   background-image: url(../images/contact-bg.jpg);
   background-repeat: no-repeat;
@@ -1404,7 +1399,7 @@ Page Header Style
   color: #1e1e1e;
 }
 
-.page-heading h3 {
+.page-heading h1 {
   font-size: 48px;
   font-weight: 900;
   text-transform: uppercase;
