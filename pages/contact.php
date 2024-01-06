@@ -18,14 +18,16 @@
 
 <body>
 
-  <?php include_once("../include/navbar.php") ?>
+  <header>
+    <?php include_once("../include/navbar.php") ?>
+  </header>
 
   <div class="page-heading header-text">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
           <span class="breadcrumb"><a href="#">Nous contacter</span>
-          <h3>Nous contacter</h3>
+          <h1>Nous contacter</h1>
         </div>
       </div>
     </div>

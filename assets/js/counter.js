@@ -4,7 +4,7 @@
   
       return $(this).each(function () {
         // set options for current element
-        var settings = $.extend(
+        let settings = $.extend(
           {},
           $.fn.countTo.defaults,
           {
@@ -18,11 +18,11 @@
         );
   
         // how many times to update the value, and how much to increment the value on each update
-        var loops = Math.ceil(settings.speed / settings.refreshInterval),
+        let loops = Math.ceil(settings.speed / settings.refreshInterval),
           increment = (settings.to - settings.from) / loops;
   
-        // references & variables that will change with each update
-        var self = this,
+        // references & letiables that will change with each update
+        let self = this,
           $self = $(this),
           loopCount = 0,
           value = settings.from,
@@ -62,7 +62,7 @@
         }
   
         function render(value) {
-          var formattedValue = settings.formatter.call(self, value, settings);
+          let formattedValue = settings.formatter.call(self, value, settings);
           $self.html(formattedValue);
         }
       });
@@ -98,7 +98,7 @@
     $(".timer").each(count);
   
     function count(options) {
-      var $this = $(this);
+      let $this = $(this);
       options = $.extend({}, options || {}, $this.data("countToOptions") || {});
       $this.countTo(options);
     }
