@@ -1,0 +1,72 @@
+/* Style pour la le conteneur "Savourez nos Mocktails" */
+.enjoy-our-mocktails {
+  display: flex;
+  flex-direction: column;
+  background-color: #black;
+}
+.h2-savourez-nos-mocktails-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.h2-savourez-nos-mocktails-container h2 {
+  background-color: #f2f2f2;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.enjoy-our-mocktails-section {
+  margin-top: 20px;
+  display: flex;
+  gap: 50px;
+  background-color: #feffd3;
+}
+
+.enjoy-our-mocktails-section article {
+  margin-bottom: 20px;
+  height: 50vh;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  flex-grow: 1;
+  background-color: #feffd3;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.enjoy-our-mocktails-section article div {
+  text-align: center;
+  background-color: #d9d9d9;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.enjoy-our-mocktails-section article div img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+.enjoy-our-mocktails-section article main {
+  background-color: #d9d9d9;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.enjoy-our-mocktails-section article main h3 {
+  margin-top: 10px;
+  font-size: 1.5em;
+  color: #333;
+  background-color: #pink;
+}
+
+.enjoy-our-mocktails-section article p {
+  margin-top: 10px;
+  line-height: 1.5;
+  color: #666;
+  background-color: #d9d9d9;
+  flex-grow: 1;
+  flex-basis: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
