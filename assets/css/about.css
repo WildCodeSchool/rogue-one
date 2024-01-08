@@ -4,14 +4,14 @@
   margin-bottom: 0;
 }
 
-.history-content {
+/* .history-content {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row-reverse;
   gap: 30px;
   margin-bottom: 30px;
-}
+} */
 
 .history-images,
 .history {

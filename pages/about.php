@@ -15,7 +15,6 @@
   <link rel="stylesheet" href="../assets/css/profil_cards.css">
   <link rel="stylesheet" href="../assets/css/footer.css">
   <link rel="icon" type="image/png" href="../assets/images/logo.png">
-  <link rel="icon" type="image/png" href="../../assets/images/logo.png" />
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 </head>
 
@@ -48,32 +47,36 @@
       </div>
     </div>
   </div>
-
-  <div id="history">
-    <div class="history-content">
-      <div class="history">
-        <p>Nos Mocktails sont des Cocktails SANS ALCOOL.
-          Ces pépites culinaires aux saveurs LOCALES sont
-          les fruits du beau travail de Mme Surya GIRAULT
-          et ils vous promettent de voyager dès la première
-          gorgée, avec ses goûts raffinés et originaux.
-        </p>
-        <p>
-          Cette alternative ne vous dépaysera point du
-          monde des cocktails, mais vous aidera à prendre
-          plaisir gustativement avec ZÉRO ALCOOL et nos
-          produits locaux : des fruits du Péyi choisis avec
-          nos soins auprès de nos chers producteurs locaux.
-        </p>
-        <p>
-          Nos boissons Haut de gamme et locales sont déjà
-          appréciées par plusieurs centaines de guyanais,
-          elles commencent à être servis sur des grandes
-          tables de restaurants du Péyi !
-        </p>
+  <div class="col-lg-12 col-md-12">
+    <div id="history">
+      <div class="history-content">
+        <div class="history">
+          <p>Nos Mocktails sont des Cocktails SANS ALCOOL.
+            Ces pépites culinaires aux saveurs LOCALES sont
+            les fruits du beau travail de Mme Surya GIRAULT
+            et ils vous promettent de voyager dès la première
+            gorgée, avec ses goûts raffinés et originaux.
+          </p>
+          <p>
+            Cette alternative ne vous dépaysera point du
+            monde des cocktails, mais vous aidera à prendre
+            plaisir gustativement avec ZÉRO ALCOOL et nos
+            produits locaux : des fruits du Péyi choisis avec
+            nos soins auprès de nos chers producteurs locaux.
+          </p>
+          <p>
+            Nos boissons Haut de gamme et locales sont déjà
+            appréciées par plusieurs centaines de guyanais,
+            elles commencent à être servis sur des grandes
+            tables de restaurants du Péyi !
+          </p>
+        </div>
       </div>
-      <div class="history-images">
-        <img src="../assets/images/mocktail1.png" alt="">
+
+      <div class="col-lg-12">
+        <div class="history-images">
+          <img src="../assets/images/mocktail1.png" alt="">
+        </div>
       </div>
     </div>
   </div>
