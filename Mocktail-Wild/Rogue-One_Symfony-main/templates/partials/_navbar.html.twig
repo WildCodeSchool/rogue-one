@@ -1,0 +1,38 @@
+<div class="navbar navbar-light bg-light navbar-expand-md px-3">
+	<a href="{{ path('app_home') }}" class="navbar-brand">
+		<img src="{{ asset('build/images/mc_logo_text.png') }}" alt=""/>
+	</a>
+	<div
+		class="w-50 mx-auto">
+		<div class="input-icons position-relative">
+			<i class="fa-solid fa-magnifying-glass position-absolute translate-bottom mt-2 ms-2 ps-1 text-secondary"></i>
+			<input class="form-control" id="searchInput" type="text"/>
+		</div>
+	</div>
+
+	<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="navbar-collapse collapse" id="menu">
+		<ul class="navbar-nav ms-auto" style="list-style:none;">
+			<li class="nav-item mx-3">
+				<a href="{{ path('app_home') }}" class="active">Accueil</a>
+			</li>
+			<li class="nav-item mx-3">
+				<a href="{{ path('app_product_index') }}">Nos Mocktails</a>
+			</li>
+			<li class="nav-item mx-3">
+				<a href="{{ path('app_contact') }}">Nous contacter</a>
+			</li>
+			<li class="nav-item mx-3">
+				<a href="{{ path('app_about_us') }}">A propos</a>
+			</li>
+			<li class="nav-item mx-3">
+				<a class="nav-link">
+					<i class="fa-solid fa-ellipsis fs-4"></i>
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>
+

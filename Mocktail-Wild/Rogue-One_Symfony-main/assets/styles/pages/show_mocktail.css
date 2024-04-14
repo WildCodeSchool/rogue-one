@@ -1,0 +1,91 @@
+.title-detail-page {
+  background-color: #fafafa;
+  padding: 100px 0;
+}
+
+.title-detail-page .tab-content img {
+  padding: 0 45px;
+}
+
+.title-detail-page .tabs-content .nav-link {
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #1e1e1e !important;
+  border-radius: 5px;
+  height: 50px;
+  line-height: 50px;
+  display: inline-block;
+  padding: 0 25px;
+  color: #fff;
+}
+
+.title-detail-page .tabs-content .nav-tabs .nav-link.active {
+  background-color: #cba135 !important;
+}
+
+.title-detail-page .tabs-content ul.nav-tabs {
+  border-bottom: none !important;
+  margin-bottom: 80px;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -130px;
+}
+
+.title-detail-page .tabs-content ul.nav-tabs li {
+  padding-right: 0;
+  border-right: none;
+  margin-left: 20px;
+}
+
+.title-detail-page .info-table {
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+  padding: 35px 30px;
+}
+
+.title-detail-page .info-table ul li {
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #eee;
+  font-size: 15px;
+  color: #aaa;
+  font-weight: 400;
+}
+
+.title-detail-page .info-table ul li:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+#ingredient,
+#price {
+  font-size: 20px;
+  color: #1e1e1e;
+  font-weight: 700;
+}
+
+#price {
+  float: right;
+}
+
+.title-detail-page .tabs-content {
+  padding: 0;
+  background-color: transparent;
+}
+
+.title-detail-page .tabs-content h1 {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.title-detail-page .icon-button,
+.main-button {
+  margin-top: 15px;
+}
+
+.img-thumbnail {
+  width: 50px;
+  height: auto;
+}

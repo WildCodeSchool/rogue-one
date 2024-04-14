@@ -1,0 +1,17 @@
+/* Styles généraux du .page-heading */
+.page-heading {
+    background-image: url("../../images/banner/Banniere.jpg");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 110px 0px;
+    text-align: center;
+
+    & h1 {
+        background-color: #fff;
+        text-transform: uppercase;
+        color: #1e1e1e;
+        display: inline-block;
+        padding: 15px 20px;
+    }
+}

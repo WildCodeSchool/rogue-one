@@ -1,0 +1,75 @@
+{% extends 'base.html.twig' %}
+{% block stylesheets %}
+	{{ parent() }}
+	{{
+    encore_entry_link_tags("homeEntry")
+}}
+{% endblock %}
+{% block content %}
+
+	{% block heading %}{% endblock %}
+	<section id="carouselExampleAutoplaying" class="carousel slide col-sm-12" data-bs-ride="carousel">
+
+		<div class="main-banner">
+			<ul class="carousel-inner">
+				<li class="carousel-item active">
+					<a href={{ path('app_product_index') }}>
+						<div class="item item-1">
+							<div class="header-text">
+								<h1>Venez!<br/>vite découvrir nos mocktails</h1>
+							</div>
+						</div>
+					</a>
+				</li>
+
+				<li class="carousel-item">
+					<div class="item item-2">
+						<div class="header-text">
+							<h1>A venir...<br/></h1>
+						</div>
+					</div>
+				</li>
+			</ul>
+			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
+		</div>
+	</section>
+
+	<div class="new section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 offset-lg-4">
+					<div class="section-heading text-center">
+						<h6>| Nouvel arrivage</h6>
+						<h2>{{ latestProduct.name }}</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+			<div class="col mb-5">
+				<div class="card h-100">
+					<img class="card-img-top" src="{{ asset('build/images/mocktails/' ~ latestProduct.image) }}" alt="{{ latestProduct.name }}"/>
+					<div class="card-body p-4">
+						<div class="text-center">
+							<h5 class="fw-bolder">{{ latestProduct.name }}</h5>
+							<span>{{ latestProduct.price|number_format(2, ',', ' ') }}€</span>
+						</div>
+					</div>
+					<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+						<div class="text-center">
+							<a class="btn btn-outline-dark mt-auto" href="{{ path('app_product_show', {'id': latestProduct.id}) }}">Voir le produit</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}

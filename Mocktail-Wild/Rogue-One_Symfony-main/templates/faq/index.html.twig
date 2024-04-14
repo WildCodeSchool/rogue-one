@@ -1,0 +1,51 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	{{ parent() }}
+{% endblock %}
+
+{% block stylesheets %}
+	{{ parent() }}
+	{{ encore_entry_link_tags("faq") }}
+{% endblock %}
+
+{% block javascripts %}
+	{{ parent() }}
+	{{ encore_entry_script_tags("mocktailFilter")   }}
+{% endblock %}
+
+
+{% block content %}
+	<div class="container">
+		<div class="row justify-content-md-center">
+			<div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
+				<hr class="w-50 mx-auto mb-5 mb-xl-9 border-dark-subtle">
+				<p class="display-5 mb-4 mb-md-5 text-center">{{pageName}}</p>
+				<hr class="w-50 mx-auto mb-5 mb-xl-9 border-dark-subtle">
+			</div>
+		</div>
+	</div>
+	<div class="single-mocktail section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="main-content"></div>
+					<div class="accordion" id="accordionExample">
+						{% for faqs in faq %}
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="{{ faqs.section }}">
+									<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#{{ faqs.collapse }}" aria-expanded="true" aria-controls="{{ faqs.collapse }}">
+										<strong>{{ faqs.question }}</strong>
+									</button>
+								</h2>
+								<div id="{{ faqs.collapse }}" class="accordion-collapse collapse" aria-labelledby="{{ faqs.section }}" data-bs-parent="#accordionExample">
+									<div class="accordion-body">{{ faqs.response }}</div>
+								</div>
+							</div>
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}

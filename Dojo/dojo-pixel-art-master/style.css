@@ -1,0 +1,11 @@
+table {
+    border-collapse: collapse;
+    margin-block-start: 0.5rem;
+}
+  
+td {
+    --square-size: 2rem;
+    width: var(--square-size);
+    height: var(--square-size);
+    border: solid 1px black;
+} 

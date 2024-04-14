@@ -1,0 +1,50 @@
+{% extends 'base.html.twig' %}
+{% block title %}
+	{{ parent() }}
+	{{ pageName }}
+{% endblock %}
+
+{% block stylesheets %}
+	{{ parent() }}
+	{{ encore_entry_link_tags("members") }}
+{% endblock %}
+
+{% block javascripts %}
+	{{ parent() }}
+	{{ encore_entry_script_tags("mocktailFilter")   }}
+{% endblock %}
+
+{% block content %}
+	<section class="py-3 py-md-5 py-xl-8">
+		<div class="container">
+			<div class="row justify-content-md-center">
+				<div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
+					<h1 class="fs-6 text-secondary mb-2 text-uppercase text-center">Rogue One Dev</h1>
+					<p class="display-5 mb-4 mb-md-5 text-center">Redéfinir et repousser les limites de l'impossible</p>
+					<hr class="w-50 mx-auto mb-5 mb-xl-9 border-dark-subtle">
+				</div>
+			</div>
+		</div>
+		<div class="container overflow-hidden">
+			<div class="row ">
+				{% for member in members %}
+					<div class="col-lg-6 col-md-6 col-sm-6">
+						<div class="card-box text-center">
+							<div class="user-pic">
+								<img src="{{ asset('build/images/team/' ~ member.img) }}" class="img-fluid" alt="User Pic">
+							</div>
+							<h1>{{ member.firstname }}</h1>
+							<h2>{{ member.lastname }}</h2>
+							<span>{{ member.role }}</span>
+							<hr>
+							<p>{{ member.description }}</p>
+							<hr>
+							<a href="{{ member.link }}" target="_blank" class="btn">Voir LinkedIn</a>
+						</div>
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+	</section>
+{% endblock %}
+

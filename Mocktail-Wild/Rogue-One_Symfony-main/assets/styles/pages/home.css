@@ -1,0 +1,110 @@
+/* Style pour la le conteneur "Savourez nos Mocktails" */
+.enjoy-our-mocktails {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+
+.h2-savourez-nos-mocktails-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.h2-savourez-nos-mocktails-container h2 {
+    background-color: #f2f2f2;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.enjoy-our-mocktails-section {
+    margin-top: 20px;
+    display: flex;
+    gap: 50px;
+    background-color: #feffd3;
+}
+
+.enjoy-our-mocktails-section article {
+    margin-bottom: 20px;
+    height: 50vh;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex-grow: 1;
+    background-color: #feffd3;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.enjoy-our-mocktails-section article div,
+.enjoy-our-mocktails-section article main,
+.enjoy-our-mocktails-section article p {
+    background-color: #d9d9d9;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.enjoy-our-mocktails-section article div img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.enjoy-our-mocktails-section article main h3 {
+    margin-top: 10px;
+    font-size: 1.5em;
+    color: #333;
+    background-color: pink;
+}
+
+.enjoy-our-mocktails-section article p {
+    margin-top: 10px;
+    line-height: 1.5;
+    color: #666;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.video {
+    /* background-image: url(../images/video-bg.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 100px 0px 250px 0px;
+    position: relative;
+}
+
+.video-content {
+    margin-top: -240px;
+}
+
+.video .section-heading h2 {
+    color: #fff;
+}
+
+.video-content .video-frame {
+    position: relative;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+
+.video-content .video-frame img {
+    border-radius: 10px;
+}
+
+.video-content .video-frame a {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-26px, -26px);
+    width: 52px;
+    height: 52px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    line-height: 52px;
+    color: #f35525;
+    outline: 15px solid rgba(254, 85, 37, 0.5);
+    font-size: 18px;
+}

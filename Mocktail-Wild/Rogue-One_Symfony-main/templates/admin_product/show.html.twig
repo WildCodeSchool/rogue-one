@@ -1,0 +1,72 @@
+{% extends 'admin.base.html.twig' %} {% block stylesheets %}
+{{ encore_entry_link_tags("adminDashboardCss") }}
+{% endblock %} {% block javascripts %}
+{{ encore_entry_script_tags("adminDashboardJs") }}
+{% endblock %} {% block content %}
+<div class="container-fluid px-4">
+    <h1>Inspecter le Produit</h1>
+    <div class="card mb-4">
+        <div class="card-body">
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nom</th>
+                        <th>Image</th>
+                        <th>Prix</th>
+                        <th>Détails</th>
+                        <th>Actions</th>
+                    </tr>
+                    <tr>
+                        <td>{{ product.id }}</td>
+                        <td>{{ product.name }}</td>
+                        <td>
+                            <img
+                                src="{{ asset('build/images/mocktails/' ~ product.image) }}"
+                                style="max-width: 30px; height: auto"
+                                class="img-thumbnail"
+                                alt="..."
+                            />
+                        </td>
+                        <td>{{ product.price }}</td>
+                        <td>{{ product.detail }}</td>
+                        <td>
+                            <a
+                                href="{{
+                                    path('app_admin_product_edit', {
+                                        id: product.id
+                                    })
+                                }}"
+                                class="btn btn-warning btn-sm"
+                                ><i class="fa-solid fa-pen"></i
+                            ></a>
+                            <form
+                                method="post"
+                                action="{{
+                                    path('app_admin_product_delete', {
+                                        id: product.id
+                                    })
+                                }}"
+                                onsubmit="return confirm('Are you sure you want to delete this item?');"
+                                style="display: inline"
+                            >
+                                <input
+                                    type="hidden"
+                                    name="_token"
+                                    value="{{ csrf_token('delete' ~ product.id) }}"
+                                />
+                                <button class="btn btn-danger btn-sm">
+                                    <i class="fa-solid fa-trash"></i>
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+</div>
+<a href="{{ path('app_admin_product_index') }}"
+    >Retour a la liste des Produits</a
+>
+{% endblock %}

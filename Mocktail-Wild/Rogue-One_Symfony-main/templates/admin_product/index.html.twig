@@ -1,0 +1,108 @@
+{% extends 'admin.base.html.twig' %}
+{% block stylesheets %}
+	{{
+    encore_entry_link_tags("adminDashboardCss")
+}}
+{% endblock %}
+{% block javascripts %}
+
+	{{
+    encore_entry_script_tags("adminDashboardJs")
+}}
+{% endblock %}
+{% block content %}
+	<div class="container-fluid px-4">
+		<h1 class="mt-4">Liste des produits</h1>
+		<div class="card mb-4">
+			<div class="card-body">
+				<table class="table table-striped table-hover">
+					<thead>
+						<tr>
+							<th>ID</th>
+							<th>Nom</th>
+							<th>Image</th>
+							<th>Prix</th>
+							<th>Détails</th>
+							<th>Actions</th>
+						</tr>
+					</thead>
+
+					<tbody>
+						{% for product in products %}
+							<tr>
+								<td>{{ product.id }}</td>
+								<td>{{ product.name }}</td>
+								<td>
+									<img src="{{ asset('build/images/mocktails/' ~ product.image) }}" class="img-thumbnail" alt="..."/>
+								</td>
+								<td>{{ product.price }}</td>
+								<td>{{ product.detail|length > 50 ? product.detail|slice(0, 50) ~ '...' : product.detail }}</td>
+								<td>
+									<!-- Button trigger modal -->
+									<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal{{ product.id }}">
+										<i class="fa-solid fa-eye"></i>
+									</button>
+
+									<!-- Modal -->
+									<div class="modal fade" id="productModal{{ product.id }}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="productModal{{ product.id }}Label" aria-hidden="true">
+										<div class="modal-dialog">
+											<div class="modal-content">
+												<div class="modal-header">
+													<h5 class="modal-title" id="productModal{{ product.id }}Label">{{ product.name }}</h5>
+													<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+												</div>
+												<div
+													class="modal-body">
+													<!-- Ajoutez les détails du produit ici -->
+													<p>ID:
+														{{ product.id }}</p>
+													<p>Nom:
+														{{ product.name }}</p>
+													<p>Prix:
+														{{ product.price }}</p>
+													<p>Détail:
+														{{ product.detail }}</p>
+													<!-- Ajoutez d'autres détails du produit ici -->
+												</div>
+												<div class="modal-footer">
+													<button type="button" class="btn btn-warning">
+														<a href="{{ path( 'app_admin_product_edit', { id: product.id } ) }}" class="btn btn-warning btn-sm">
+															<i class="fa-solid fa-pen"></i>Editer
+														</a></button>
+													<button type="button" class="btn btn-danger">Supprimer</button>
+												</div>
+											</div>
+										</div>
+									</div>
+									<a href="{{ path( 'app_admin_product_edit', { id: product.id } ) }}" class="btn btn-warning btn-sm">
+										<i class="fa-solid fa-pen"></i>
+									</a>
+									<form method="post" action="{{ path('app_admin_product_delete', {'id': product.id}) }}" onsubmit="return confirm('Are you sure you want to delete this item?');" style="display: inline;">
+										<input type="hidden" name="_token" value="{{ csrf_token('delete' ~ product.id) }}">
+										<button class="btn btn-danger btn-sm">
+											<i class="fa-solid fa-trash"></i>
+										</button>
+									</form>
+								</td>
+							</tr>
+						{% else %}
+							<tr>
+								<td colspan="6">
+									Introuvable
+								</td>
+							</tr>
+						{% endfor %}
+					</tbody>
+				</table>
+				<div class="col-lg- col-md-6 col-sm-12 align-self-center mb-30 properties-items col-md-6 adv">
+					<div>
+						<a href="{{ path('app_admin_product_new') }}" class="btn btn-success">
+							<i class="fa-solid fa-plus"></i>
+							Ajouter un Nouveau Produit</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}
+

@@ -1,0 +1,57 @@
+{% extends 'admin.base.html.twig' %} {% block stylesheets %}
+{{ encore_entry_link_tags("adminDashboardCss") }}
+{% endblock %} {% block javascripts %}
+
+{{ encore_entry_script_tags("adminDashboardJs") }}
+{% endblock %} {% block content %}
+
+<div class="container-fluid px-4">
+    <h1 class="mt-4">Listes des Messages</h1>
+    <div class="card mb-4">
+        <div class="card-body">
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nom</th>
+                        <th>Sujet</th>
+                        <th>Message</th>
+                        <th>Voir</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    {% for contact in contacts %}
+                    <tr>
+                        <td>{{ contact.id }}</td>
+                        <td>{{ contact.name }}</td>
+                        <td>{{ contact.subject }}</td>
+                        <td>{{ contact.message }}</td>
+                        <td>
+                            <a
+                                href="{{
+                                    path(
+                                        "app_admin_contact_show",
+                                        { id: contact.id }
+                                    )
+                                }}" class="btn btn-primary btn-sm" ><i class="fa-solid fa-eye"></i></a
+                            >
+                        </td>
+                    </tr>
+                    {% else %}
+                    <tr>
+                        <td colspan="6">
+                            Introuvable
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+
+
+{% endblock %}

@@ -1,0 +1,39 @@
+.main-banner .item {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 220px 20% 340px 20%;
+    padding: 220px 20% 340px 20%;
+    margin-top: 0px;
+    height: 100%;
+    width: auto;
+    height: 100%;
+    width: auto;
+}
+
+.main-banner .item-1 {
+    background-image: url("../../images/banner-01.jpg");
+}
+
+.main-banner .item-2 {
+    background-image: url("../../images/banner-02.jpg");
+}
+
+.main-banner .item-3 {
+    background-image: url("../../images/banner-03.jpg");
+}
+
+.main-banner .item h1 {
+    font-size: 62px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 72px;
+    width: 50%;
+    margin-bottom: 0px;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    display: none;
+}

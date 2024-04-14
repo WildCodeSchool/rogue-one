@@ -1,0 +1,201 @@
+.mocktails .item {
+    background-color: #fafafa;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 30px;
+    transition: background-image 0.3s, color 0.3s, border 0.3s;
+}
+
+.mocktails .item img {
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 1.5s ease;
+}
+
+.mocktails .item span.category {
+    background-color: var(--tertiary-color);
+    font-weight: 500;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #1e1e1e;
+    padding: 5px 12px;
+    display: inline-block;
+    margin-top: 25px;
+}
+
+.mocktails .item h1 {
+    font-size: 19px;
+    margin: 25px 0;
+}
+
+.mocktails .item ul {
+    border-bottom: 1px solid #eaeaea;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+}
+
+.mocktails .item ul li {
+    display: inline-block;
+    font-size: 15px;
+    color: #4a4a4a;
+    margin-right: 20px;
+}
+
+.mocktails .item h6 {
+    font-size: 20px;
+    margin-top: 6px;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.mocktails .item:hover {
+    box-shadow: 0px 0px 50px 0px rgba(31, 69, 113, 0.5);
+    -webkit-box-shadow: 0 0px 30px 0 rgba(31, 69, 113, 0.2);
+    background-image: var(--gradient);
+    color: var(--white-color);
+    border: 1.5px solid var(--white-color);
+}
+
+.mocktails .item:hover img {
+    transform: scale(1.1);
+}
+
+.mocktails .main-button {
+    display: inline-block;
+    background-color: #1e1e1e;
+    font-size: 14px;
+    font-weight: 500;
+    height: 40px;
+    line-height: 40px;
+    padding: 0px 30px;
+    border-radius: 25px;
+    transition: all 0.3s;
+}
+
+.mocktails .main-button a {
+    color: #fff;
+}
+
+.mocktails ul.mocktails-filter {
+    list-style: none;
+    text-align: center;
+    margin-bottom: 70px;
+    color: var(--primary-color);
+}
+
+.mocktails ul.mocktails-filter li {
+    display: inline-block;
+    margin: 5px 8px;
+
+}
+
+.mocktails ul.mocktails-filter li a {
+    display: inline-block;
+    text-align: center;
+    font-size: 15px;
+    text-transform: capitalize;
+    font-weight: 500;
+    color: #fff;
+    background-color: black;
+    padding: 12px 25px;
+    border-radius: 5px;
+    transition: all 0.3s;
+
+}
+
+.mocktails ul.mocktails-filter li a:hover,
+.mocktails ul.mocktails-filter li a.is_active {
+    background: var(--primary-color);
+    background: -webkit-linear-gradient(0deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    background: -o-linear-gradient(0deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    background: -moz-linear-gradient(0deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    background: linear-gradient(0deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+}
+
+.mocktails ul.pagination {
+    margin-top: 50px;
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+}
+
+.mocktails ul.pagination li {
+    display: inline-block;
+    margin: 0px 5px;
+}
+
+.mocktails ul.pagination li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #1e1e1e;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+
+.mocktails ul.pagination li a:hover {
+    background: var(--primary-color);
+    background: -webkit-linear-gradient(0deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    background: -o-linear-gradient(0deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    background: -moz-linear-gradient(0deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    background: linear-gradient(0deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+}
+
+/* Responsive Style */
+@media screen and (max-width: 450px) {
+    .mocktails .item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .mocktails .item span {
+        display: none;
+    }
+
+    .mocktails .mocktails-items {
+        flex: 0 0 calc(50% - 20px);
+    }
+
+    .mocktails .details {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .mocktails .name,
+    .mocktails .price {
+        width: 100%;
+    }
+
+    .mocktails ul.mocktails-filter li a {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+
+    .mocktails ul.mocktails-filter li {
+        margin: 5px;
+    }
+
+    .mocktails .item h1 {
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .mocktails .item span.category {
+        text-align: center;
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+}

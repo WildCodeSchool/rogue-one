@@ -1,0 +1,122 @@
+input.form-control {
+    outline: none;
+    box-shadow: none !important;
+}
+
+#searchInput {
+    padding-left: 32px;
+}
+
+.navbar {
+    background: var(--primary-color);
+    background: -webkit-linear-gradient(0deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    background: -o-linear-gradient(0deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    background: -moz-linear-gradient(0deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    background: linear-gradient(0deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    padding: 10px 0px;
+    border-bottom: 1px solid #eee;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    font-size: 20px;
+}
+
+.navbar a:hover {
+    color: var(--black-color);
+}
+
+.navbar a.active {
+    color: var(--white-color);
+    font-weight: bold;
+}
+
+.navbar a.active::after,
+.navbar a:hover::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.navbar a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.navbar a:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+.navbar ul li {
+    display: inline-block;
+}
+
+#logoImg {
+    display: none;
+}
+
+.navbar img {
+    max-width: 150px;
+    height: auto;
+}
+
+.navbar-toggler {
+    background-color: var(--white-color);
+    border-radius: 18px;
+    min-width: 45px;
+    min-height: 45px;
+    padding: 0;
+    outline: 0;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.navbar-toggler:hover {
+    background: var(--primary-color);
+    background: -webkit-linear-gradient(0deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    background: -o-linear-gradient(0deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    background: -moz-linear-gradient(0deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    background: linear-gradient(0deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    padding: 10px 0px;
+    border-bottom: 1px solid #eee;
+}
+
+@media only screen and (max-width: 450px) {
+    .navbar img {
+        content: url('../../images/mc_logo_no_text.png');
+        max-width: 50px;
+        height: auto;
+    }
+
+    .navbar a {
+        display: flex;
+        position: relative;
+        font-size: 20px;
+        align-content: center;
+        justify-content: center;
+        margin-top: 50px;
+
+        & img {
+            margin-top: -50px;
+        }
+    }
+}
